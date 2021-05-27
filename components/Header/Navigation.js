@@ -21,10 +21,10 @@ export default function Header() {
                 <img
                   src={`/assets/logo.svg`}
                   alt="logo"
-                  className="h-12 w-32"
+                  className="h-12 sm:w-32 w-24"
                 />
-                <div className="px-2 py-1 font-bold text-indigo-800 bg-gray-500 bg-opacity-40 transition-all rounded rounded-bl-none absolute -top-2 left-36">
-                  <span className="whitespace-nowrap text-sm">
+                <div className="sm:px-2 px-1 sm:py-1 font-bold text-indigo-800 bg-gray-500 bg-opacity-40 transition-all rounded rounded-bl-none absolute top-0 left-28 sm:-top-2 sm:left-36">
+                  <span className="whitespace-nowrap text-xs sm:text-sm">
                     We're hiring
                   </span>
                 </div>
