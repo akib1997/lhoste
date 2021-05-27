@@ -7,7 +7,7 @@ export default function Banner() {
   return (
     <>
       <Container>
-        <div className="my-20">
+        <div className="my-20 text-center w-3/4 mx-auto">
           <h1 className="text-4xl text-indigo-900 font-bold mb-2">
             The smarter way to manage tactical spend{" "}
           </h1>
