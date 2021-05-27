@@ -32,7 +32,7 @@ export default function Showcase() {
                 <div className="bg-green-300 bg-opacity-60 w-60 h-60 left-0 right-0 mx-auto top-6 rounded-full absolute z-20"></div>
                 <img
                   src="/assets/form.svg"
-                  className="block mx-auto lg:ml-auto relative z-30 mt-16"
+                  className="block mx-auto lg:ml-auto relative z-30 mt-16 w-full"
                   style={{ maxWidth: "400px" }}
                   alt="Form"
                 />
@@ -42,7 +42,7 @@ export default function Showcase() {
         </Container>
       </div>
 
-      <div className="relative">
+      <div className="relative pb-20">
         <img
           src="/assets/fill2.svg"
           className="absolute left-0 lg:-top-44 z-10 traingle-height"
@@ -51,16 +51,18 @@ export default function Showcase() {
         <Container>
           <div className="flex flex-wrap items-center z-20 relative">
             <div className="relative lg:w-1/2 lg:order-1 order-2">
-              <img
-                src="/assets/identify.svg"
-                className="w-3/4 mx-auto lg:mr-auto relative z-20"
-                alt="Shape"
-              />
-              <img
-                src="/assets/ellipse.svg"
-                className="absolute top-0 right-0 z-10"
-                alt="Shape"
-              />
+              <div>
+                <img
+                  src="/assets/identify.svg"
+                  className="w-full lg:w-3/4 mx-auto lg:mr-auto relative z-20"
+                  alt="Shape"
+                />
+                <img
+                  src="/assets/ellipse.svg"
+                  className="absolute top-0 right-0 z-10"
+                  alt="Shape"
+                />
+              </div>
             </div>
             <div className="lg:w-1/2 lg:order-2 order-1">
               <h2 className="text-3xl text-blue-900 font-bold mb-6">
