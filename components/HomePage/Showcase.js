@@ -31,7 +31,7 @@ export default function Showcase() {
               place
             </p>
             <Link href="/">
-              <a className="bg-blue-900 text-white inline-block px-10 py-2 rounded mt-12">
+              <a className="bg-blue-900 text-white inline-block font-bold px-10 py-2 rounded mt-12">
                 Learn more
               </a>
             </Link>
@@ -89,7 +89,7 @@ export default function Showcase() {
               </li>
             </ul>
             <Link href="/">
-              <a className="bg-blue-900 text-white inline-block px-10 py-2 rounded mt-12">
+              <a className="bg-blue-900 text-white inline-block font-bold px-10 py-2 rounded mt-12">
                 Learn more
               </a>
             </Link>
@@ -98,7 +98,7 @@ export default function Showcase() {
       </Container>
       <Container>
         <div className="lg:flex items-center relative z-20">
-          <div className="lg:w-3/5">
+          <div className="lg:w-1/2">
             <h2 className="text-3xl text-blue-900 font-bold mb-6 lg:mt-0 mt-8">
               Bring all available data into your processes
             </h2>
@@ -126,12 +126,12 @@ export default function Showcase() {
               </li>
             </ul>
             <Link href="/">
-              <a className="bg-blue-900 text-white inline-block px-10 py-2 rounded mt-12">
+              <a className="bg-blue-900 text-white inline-block font-bold px-10 py-2 rounded mt-12">
                 Learn more
               </a>
             </Link>
           </div>
-          <div className="lg:w-2/5 ml-auto">
+          <div className="lg:w-1/2 ml-auto">
             <div className="flex relative">
               <img
                 src="/assets/bring-all.svg"
