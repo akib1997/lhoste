@@ -6,18 +6,18 @@ export default function Showcase() {
     <div className="bg-white py-20 relative">
       <img
         src="/assets/fill.svg"
-        className="absolute right-0 top-0 md:-top-32 z-10 w-1/2"
+        className="absolute right-0 top-0 md:-top-32 z-10 w-4/10"
         alt="Shape"
       />
       <img
         src="/assets/fill2.svg"
-        className="absolute left-0 top-1/2 md:top-1/4 z-10 w-1/2"
+        className="absolute left-0 top-0 bottom-0 my-auto z-10 w-4/10"
         alt="Shape"
       />
 
       <img
         src="/assets/fill.svg"
-        className="absolute right-0 bottom-0 md:-bottom-24 z-10 w-1/2"
+        className="absolute right-0 bottom-0 md:-bottom-24 z-10 w-4/10"
         alt="Shape"
       />
       <Container>
