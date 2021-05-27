@@ -1,9 +1,5 @@
 import Head from "next/head";
 import { getPage } from "../lib/api";
-
-import HomeIntro from "../components/ContentElements/Home/HomeIntro/HomeIntro";
-import AppOverView from "../components/ContentElements/Home/AppOverview/AppOverView";
-import Manifest from "../components/ContentElements/Home/Manifest/Manifest";
 import Navigation from "../components/Header/Navigation";
 import Banner from "../components/HomePage/Banner";
 import ValuePropositions from "../components/HomePage/ValuePropositions";
@@ -18,11 +14,6 @@ export default function Home({ pageData }) {
         <title>{pageData?.meta?.data?.title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* 
-      <HomeIntro content={pageData?.home?.content} />
-      <ValueProposition />
-      <AppOverView />
-      <Manifest /> */}
       <Navigation />
       <Banner />
       <ValuePropositions />
