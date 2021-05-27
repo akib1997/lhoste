@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Container from "../HomePage/Container";
 
 export default function Header() {
   const router = useRouter();
@@ -13,7 +14,7 @@ export default function Header() {
   return (
     <header>
       <nav className="bg-white shadow-sm py-3 sm:py-6">
-        <div className="w-11/12 mx-auto px-2 md:0">
+        <Container>
           <div className="relative md:flex items-center justify-between">
             <div className="flex items-center">
               <div className="relative">
@@ -130,7 +131,7 @@ export default function Header() {
               </ul>
             </div>
           </div>
-        </div>
+        </Container>
       </nav>
       <div className="h-16"></div>
     </header>

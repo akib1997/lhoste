@@ -9,6 +9,7 @@ import Banner from "../components/HomePage/Banner";
 import ValuePropositions from "../components/HomePage/ValuePropositions";
 import GoodCompany from "../components/HomePage/GoodCompany";
 import Footer from "../components/Footer/Footer";
+import Showcase from "../components/HomePage/Showcase";
 
 export default function Home({ pageData }) {
   return (
@@ -25,6 +26,7 @@ export default function Home({ pageData }) {
       <Navigation />
       <Banner />
       <ValuePropositions />
+      <Showcase />
       <GoodCompany />
       <Footer />
     </>
