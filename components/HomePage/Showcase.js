@@ -11,7 +11,7 @@ export default function Showcase() {
       />
       <img
         src="/assets/fill2.svg"
-        className="absolute left-0 top-2/4 md:top-1/3 z-10 w-1/2"
+        className="absolute left-0 top-1/2 md:top-1/4 z-10 w-1/2"
         alt="Shape"
       />
 
