@@ -54,6 +54,7 @@ input:checked + div svg {
   /* important so a single div never gets distributed between columns */
   break-inside: avoid-column;
   margin-bottom: 1rem;
+  break-inside: avoid;
 }
 .traingle-height {
   height: 120%;
