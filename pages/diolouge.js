@@ -288,7 +288,7 @@ export default function diolouge() {
             <div className="hello">
               {allPosts &&
                 allPosts.map((post) => (
-                  <div className="" key={post.id}>
+                  <div className="box" key={post.id}>
                     <div className="post-box shadow-xl overflow-hidden rounded-2xl bg-white">
                       {post.img === "" ? null : (
                         <img

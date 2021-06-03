@@ -45,21 +45,15 @@ input:checked + div svg {
 }
 
 .hello {
-  /* min width of a single column */
-  column-width: 50%;
-  /* maximum amount of columns */
-  column-count: 2;
-  /* gap between the columns */
+  column-width: 100%;
+  columns: 2;
   column-gap: 1rem;
 }
 
-.hello div {
+.hello .box {
   /* important so a single div never gets distributed between columns */
   break-inside: avoid-column;
-
-  /* background-color: #2c2f33; */
   margin-bottom: 1rem;
-  /* color: white; */
 }
 .traingle-height {
   height: 120%;
