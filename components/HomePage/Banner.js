@@ -1,13 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
-import Tabs from "./Tabs";
+import AllTab from "./Tabs";
 import Container from "../HomePage/Container";
 
 export default function Banner() {
   return (
     <>
       <Container>
-        <div className="my-20 text-center w-3/4 mx-auto">
+        <div className="my-20 text-center sm:w-3/4 mx-auto">
           <h1 className="text-4xl text-indigo-900 font-bold mb-2">
             The smarter way to manage tactical spend{" "}
           </h1>
@@ -28,7 +28,7 @@ export default function Banner() {
         className="w-full h-full"
         alt="Book Demo"
       />
-      <Tabs />
+      <AllTab />
     </>
   );
 }

@@ -75,7 +75,7 @@ export default function Header() {
                 menu
                   ? "left-0 opacity-100 translate-x-0"
                   : "-left-full bg-opacity-100 -translate-x-4 md:-translate-x-0"
-              } ml-auto md:static absolute top-20 z-20 md:w-auto w-full bg-gray-300 md:bg-transparent p-4 md:p-0 opacity-0 md:opacity-100 transform`}
+              } ml-auto md:static absolute top-20 z-50 md:w-auto w-full bg-gray-300 md:bg-transparent p-4 md:p-0 opacity-0 md:opacity-100 transform`}
             >
               <ul className="md:flex">
                 <li className="md:pb-0 pb-3">
@@ -85,8 +85,8 @@ export default function Header() {
                         ${
                           router.pathname == "/"
                             ? "font-bold text-gray-700"
-                            : "text-gray-300"
-                        } px-3 py-2 md:ml-4 xl:ml-8 font-normal hover:font-bold hover:text-gray-700 transition-all`}
+                            : ""
+                        } px-3 py-2 md:ml-4 xl:ml-8 font-normal hover:text-gray-700 transition-all`}
                     >
                       Home
                     </a>
@@ -95,28 +95,35 @@ export default function Header() {
 
                 <li className="md:pb-0 pb-3">
                   <Link href="/">
-                    <a className="px-3 py-2 md:ml-4 xl:ml-8 font-normal hover:font-bold hover:text-gray-700 transition-all">
+                    <a className="px-3 py-2 md:ml-4 xl:ml-8 font-normal hover:text-gray-700 transition-all">
                       Product
                     </a>
                   </Link>
                 </li>
                 <li className="md:pb-0 pb-3">
-                  <Link href="/">
-                    <a className="px-3 py-2 md:ml-4 xl:ml-8 font-normal hover:font-bold hover:text-gray-700 transition-all">
+                  <Link href="/diolouge">
+                    <a
+                      className={`
+                        ${
+                          router.pathname == "/diolouge"
+                            ? "font-bold text-gray-700"
+                            : ""
+                        } px-3 py-2 md:ml-4 xl:ml-8 font-normal hover:text-gray-700 transition-all`}
+                    >
                       Diolouge
                     </a>
                   </Link>
                 </li>
                 <li className="md:pb-0 pb-3">
                   <Link href="/">
-                    <a className="px-3 py-2 md:ml-4 xl:ml-8 font-normal hover:font-bold hover:text-gray-700 transition-all">
+                    <a className="px-3 py-2 md:ml-4 xl:ml-8 font-normal hover:text-gray-700 transition-all">
                       About
                     </a>
                   </Link>
                 </li>
                 <li className="md:pb-0 pb-3">
                   <Link href="/">
-                    <a className="px-3 py-2 md:ml-4 xl:ml-8 font-normal hover:font-bold hover:text-gray-700 transition-all">
+                    <a className="px-3 py-2 md:ml-4 xl:ml-8 font-normal hover:text-gray-700 transition-all">
                       US
                     </a>
                   </Link>
@@ -133,7 +140,6 @@ export default function Header() {
           </div>
         </Container>
       </nav>
-      <div className="h-16"></div>
     </header>
   );
 }
