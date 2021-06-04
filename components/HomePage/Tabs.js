@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Container from "./Container";
+import Container from "../Layout/Container";
 import dynamic from "next/dynamic";
 const Tabs = dynamic(
   import("react-tabs").then((mod) => mod.Tabs),

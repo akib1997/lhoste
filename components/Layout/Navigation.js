@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Container from "../HomePage/Container";
+import Container from "./Container";
 
 export default function Header() {
   const router = useRouter();
@@ -12,8 +12,8 @@ export default function Header() {
   };
 
   return (
-    <header>
-      <nav className="bg-white shadow-sm py-3 sm:py-6">
+    <header className="bg-white">
+      <nav className="shadow py-3 sm:py-6">
         <Container>
           <div className="relative md:flex items-center justify-between">
             <div className="flex items-center">
@@ -115,8 +115,15 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="md:pb-0 pb-3">
-                  <Link href="/">
-                    <a className="px-3 py-2 md:ml-4 xl:ml-8 font-normal hover:text-gray-700 transition-all">
+                  <Link href="/about">
+                    <a
+                      className={`
+                        ${
+                          router.pathname == "/about"
+                            ? "font-bold text-gray-700"
+                            : ""
+                        } px-3 py-2 md:ml-4 xl:ml-8 font-normal hover:text-gray-700 transition-all`}
+                    >
                       About
                     </a>
                   </Link>

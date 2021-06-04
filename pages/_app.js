@@ -1,13 +1,13 @@
+import Header from "../components/Layout/Navigation";
+import Footer from "../components/Layout/Footer";
 import "../styles/globals.css";
-import Menu from "../components/Layout/Menu";
-import Footer from "../components/Common/Footer/Footer";
 
 function MyApp({ Component, pageProps, navItems }) {
   return (
     <>
-      {/* <Menu navItems={navItems} /> */}
+      <Header />
       <Component {...pageProps} />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

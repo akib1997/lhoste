@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Container from "./Container";
+import Container from "../Layout/Container";
 
 export default function ValuePropositions() {
   const items = [

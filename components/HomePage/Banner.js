@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import AllTab from "./Tabs";
-import Container from "../HomePage/Container";
+import Container from "../Layout/Container";
 
 export default function Banner() {
   return (

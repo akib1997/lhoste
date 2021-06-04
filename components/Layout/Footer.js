@@ -1,13 +1,57 @@
 import Link from "next/link";
 import React from "react";
-import Container from "../HomePage/Container";
+import Container from "./Container";
 
 export default function Footer() {
   const links1 = ["Home", "Product", "Diolouge", "About"];
   const links2 = ["Carrer", "Data Privacy", "terms of Use", "Imprint"];
+
   return (
-    <div className="text-white pt-52" style={{ backgroundColor: "#00064A" }}>
+    <footer className="text-white mt-72" style={{ backgroundColor: "#00064A" }}>
       <Container>
+        <div className="text-center relative -top-52">
+          <h2 className="text-4xl font-bold text-black mb-12">
+            You’re in good company
+          </h2>
+          <div className="grid lg:grid-cols-2 gap-4">
+            <div className="bg-white rounded-xl overflow-hidden sm:flex shadow-md items-center text-indigo-900">
+              <img
+                src="/assets/oster.svg"
+                alt="oster"
+                className="w-full sm:w-1/3"
+              />
+              <div className="p-3 text-left">
+                <p>
+                  This is a great Customer Quote. Lorem ipsum dolor sit amet,
+                  consetetur sadipscing elitr, sed diam nonumy eirmod.Lorem
+                  ipsum dolor sit amet, consetetur.
+                </p>
+                <h6 className="text-xl font-bold text-indigo-900 mt-6">
+                  Christopher Oster
+                </h6>
+                <span className="text-sm">CEO of a great Company</span>
+              </div>
+            </div>
+            <div className="bg-white rounded-xl overflow-hidden sm:flex shadow-md items-center text-indigo-900">
+              <img
+                src="/assets/image-7.svg"
+                alt="oster"
+                className="w-full sm:w-1/3"
+              />
+              <div className="p-3 text-left">
+                <p>
+                  This is a great Customer Quote. Lorem ipsum dolor sit amet,
+                  consetetur sadipscing elitr, sed diam nonumy eirmod.Lorem
+                  ipsum dolor sit amet, consetetur.
+                </p>
+                <h6 className="text-xl font-bold text-indigo-900 mt-6">
+                  Philip Liebenow
+                </h6>
+                <span className="text-sm">CEO of a great Company</span>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="py-20 border-b border-gray-400 border-opacity-50">
           <h2 className="text-5xl font-bold mb-6">
             <span className="text-white">Experience Lhotse. </span>
@@ -90,6 +134,6 @@ export default function Footer() {
           </div>
         </div>
       </Container>
-    </div>
+    </footer>
   );
 }

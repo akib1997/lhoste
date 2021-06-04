@@ -1,9 +1,8 @@
+import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import React from "react";
-import Header from "../components/Header/Navigation";
-import Container from "../components/HomePage/Container";
-import Footer from "../components/Footer/Footer";
+import Container from "../components/Layout/Container";
+import Footer from "../components/Layout/Footer";
 
 import { FiSearch } from "react-icons/fi";
 
@@ -126,7 +125,6 @@ export default function diolouge() {
       <Head>
         <title>Dillouge | Lhots</title>
       </Head>
-      <Header />
       <section className="pt-12 relative">
         <Container>
           <div className="text-center relative z-20">
@@ -332,7 +330,6 @@ export default function diolouge() {
           </Container>
         </div>
       </section>
-      <Footer />
     </>
   );
 }
