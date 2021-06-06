@@ -6,77 +6,79 @@ export default function Footer() {
   const links1 = ["Home", "Product", "Diolouge", "About"];
   const links2 = ["Carrer", "Data Privacy", "terms of Use", "Imprint"];
 
+  const profileData = [
+    {
+      id: 1,
+      title: "Christopher Oster",
+      text: "This is a great Customer Quote. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.Lorem ipsum dolor sit amet, consetetur.",
+      img: `https://images.unsplash.com/photo-1568316674077-d72ee56de61c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60`,
+      position: "CEO of a great Company",
+    },
+    {
+      id: 2,
+      title: "Philip Liebenow",
+      text: "This is a great Customer Quote. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.Lorem ipsum dolor sit amet, consetetur.",
+      img: `https://images.unsplash.com/photo-1560250097-0b93528c311a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60`,
+      position: "CEO of a great Company",
+    },
+  ];
+
   return (
     <footer className="text-white mt-72" style={{ backgroundColor: "#00064A" }}>
       <Container>
-        <div className="text-center relative -top-52">
+        <div className="text-center relative -top-40 lg:-top-52">
           <h2 className="text-4xl font-bold text-black mb-12">
             You’re in good company
           </h2>
           <div className="grid lg:grid-cols-2 gap-4">
-            <div className="bg-white rounded-xl overflow-hidden sm:flex shadow-md items-center text-indigo-900">
-              <img
-                src="/assets/oster.svg"
-                alt="oster"
-                className="w-full sm:w-1/3"
-              />
-              <div className="p-3 text-left">
-                <p>
-                  This is a great Customer Quote. Lorem ipsum dolor sit amet,
-                  consetetur sadipscing elitr, sed diam nonumy eirmod.Lorem
-                  ipsum dolor sit amet, consetetur.
-                </p>
-                <h6 className="text-xl font-bold text-indigo-900 mt-6">
-                  Christopher Oster
-                </h6>
-                <span className="text-sm">CEO of a great Company</span>
-              </div>
-            </div>
-            <div className="bg-white rounded-xl overflow-hidden sm:flex shadow-md items-center text-indigo-900">
-              <img
-                src="/assets/image-7.svg"
-                alt="oster"
-                className="w-full sm:w-1/3"
-              />
-              <div className="p-3 text-left">
-                <p>
-                  This is a great Customer Quote. Lorem ipsum dolor sit amet,
-                  consetetur sadipscing elitr, sed diam nonumy eirmod.Lorem
-                  ipsum dolor sit amet, consetetur.
-                </p>
-                <h6 className="text-xl font-bold text-indigo-900 mt-6">
-                  Philip Liebenow
-                </h6>
-                <span className="text-sm">CEO of a great Company</span>
-              </div>
-            </div>
+            {profileData &&
+              profileData.map((data) => (
+                <div
+                  className="bg-white rounded-2xl overflow-hidden sm:flex shadow-md items-center text-indigo-900"
+                  key={data.id}
+                >
+                  <img
+                    src={data.img}
+                    alt={data.title}
+                    className="w-full sm:w-48 sm:h-64 object-cover"
+                  />
+                  <div className="py-3 md:px-6 px-3 text-left">
+                    <p>{data.text}</p>
+                    <h6 className="text-xl font-bold black-color mt-6">
+                      {data.title}
+                    </h6>
+                    <span className="text-sm"> {data.position} </span>
+                  </div>
+                </div>
+              ))}
           </div>
         </div>
-        <div className="py-20 border-b border-gray-400 border-opacity-50">
-          <h2 className="text-5xl font-bold mb-6">
+        <div className="pb-20 pt-8 border-b border-gray-400 border-opacity-50">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">
             <span className="text-white">Experience Lhotse. </span>
             <span className="text-gray-400">Book a demo.</span>
           </h2>
-          <p className="text-xl lg:w-2/3">
+          <p className="text-xl lg:w-2/3 text-gray-400">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod.Lorem ipsum dolor sit amet, consetetur.
           </p>
-          <div className="flex my-6">
+          <form className="flex my-6">
             <label htmlFor="email"></label>
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Add your mail here..."
-              className="focus:outline-none bg-white rounded-sm px-3 py-1 mr-8 max-w-xs w-full text-gray-700"
+              className="focus:outline-none bg-white rounded px-4 py-3 mr-8 max-w-xs w-full text-gray-700"
             />
             <button
               type="submit"
-              className="bg-green-400 text-white  focus:outline-none rounded-sm px-3 py-1 font-semibold"
+              className="bg-green-300 text-white  focus:outline-none rounded px-6 py-1 font-semibold"
+              onClick={(e) => e.preventDefault()}
             >
               Book Demo
             </button>
-          </div>
+          </form>
         </div>
         <div className="py-12">
           <div className="sm:grid sm:grid-cols-4 sm:gap-4">
@@ -95,8 +97,7 @@ export default function Footer() {
                       <li key={i}>
                         <Link href="/">
                           <a className="uppercase inline-block font-normal text-gray-400 text-base mb-3 hover:font-bold hover:text-white">
-                            {" "}
-                            {link}{" "}
+                            {link}
                           </a>
                         </Link>
                       </li>

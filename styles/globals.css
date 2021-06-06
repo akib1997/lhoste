@@ -17,16 +17,28 @@ body {
   /* background-color: #f4f4ff; */
   /* font-size: 1.1rem; */
 }
-.text-color {
+.main-bg {
+  background-color: #f4f4ff;
+}
+.main-color {
+  color: #f4f4ff;
+}
+.black-color {
   color: #00064a;
+}
+.btn-bg {
+  background-color: #240d85;
+}
+.color-blue {
+  color: #240d85;
 }
 .tag-bg {
   background-color: rgba(36, 13, 133, 0.15);
 }
 .react-tabs__tab-panel {
-  transition: all 0.5s;
+  transition: all 0.7s;
   position: relative;
-  top: -1rem;
+  top: -2rem;
   opacity: 0;
 }
 .react-tabs__tab-panel--selected {
@@ -37,6 +49,7 @@ body {
 .react-tabs__tab--selected button {
   background-color: rgba(36, 13, 133, 0.15);
   color: #240d85;
+  font-weight: 700;
 }
 
 input:checked + div {
@@ -46,13 +59,16 @@ input:checked + div svg {
   @apply block;
 }
 
-.hello {
-  column-width: 100%;
-  columns: 2;
+.dynamic-col {
+  -webkit-columns: 2 100%;
+  -moz-columns: 2 100%;
+  columns: 2 100%;
+  -webkit-column-gap: 1rem;
+  -moz-column-gap: 1rem;
   column-gap: 1rem;
 }
 
-.hello .box {
+.dynamic-col .box {
   /* important so a single div never gets distributed between columns */
   break-inside: avoid-column;
   margin-bottom: 1rem;
@@ -69,9 +85,13 @@ input:checked + div svg {
 }
 
 @media screen and (max-width: 768px) {
-  .hello {
-    column-count: 1;
-    column-width: 100%;
+  .dynamic-col {
+    -webkit-columns: 1 100%;
+    -moz-columns: 1 100%;
+    columns: 1 100%;
+    -webkit-column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
   }
 }
 

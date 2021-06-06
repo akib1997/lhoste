@@ -43,46 +43,42 @@ export default function AllTab() {
     },
   ];
   return (
-    <div className="py-20" style={{ backgroundColor: "#F4F4FF" }}>
-      <Container>
-        <div className="shadow-xl rounded-2xl py-20 bg-white  relative z- -top-52 md:-top-80 lg:-top-96">
-          <Tabs>
-            {tabData.map((data) => (
-              <TabPanel key={data.id}>
-                <div className="lg:flex text-center lg:text-left lg:p-0 p-4">
-                  <div className="lg:w-1/2">
-                    <img
-                      src={`/assets/${data.img}`}
-                      className="h-64 mx-auto"
-                      alt="Requests are handled front-to- end without manual steps"
-                    />
-                  </div>
-                  <div className="lg:w-1/2 lg:pr-12">
-                    <h3 className="text-3xl font-semibold mb-4">
-                      {data.title}
-                    </h3>
-                    <p>{data.text}</p>
-                  </div>
+    <>
+      <div className="shadow-xl rounded-2xl py-12 md:py-20 bg-white relative z-50 top-32">
+        <Tabs>
+          {tabData.map((data) => (
+            <TabPanel key={data.id}>
+              <div className="lg:flex text-center lg:text-left lg:p-0 p-4">
+                <div className="lg:w-1/2">
+                  <img
+                    src={`/assets/${data.img}`}
+                    className="h-64 mx-auto"
+                    alt="Requests are handled front-to- end without manual steps"
+                  />
                 </div>
-              </TabPanel>
-            ))}
-            <TabList>
-              <div className="text-center p-4">
-                <div className="inline-flex flex-wrap pt-3 mt-5 lg:rounded-full shadow-md justify-center bg-gray-50">
-                  {buttons &&
-                    buttons.map((item) => (
-                      <Tab key={item.id}>
-                        <button className="focus:outline-none rounded-full px-4 py-1 ml-4 mb-3 bg-opacity-50 font-semibold">
-                          {item.text}
-                        </button>
-                      </Tab>
-                    ))}
+                <div className="lg:w-1/2 lg:pr-12">
+                  <h3 className="text-3xl font-bold mb-4">{data.title}</h3>
+                  <p>{data.text}</p>
                 </div>
               </div>
-            </TabList>
-          </Tabs>
-        </div>
-      </Container>
-    </div>
+            </TabPanel>
+          ))}
+          <TabList>
+            <div className="text-center">
+              <div className="inline-flex flex-wrap pt-3 mt-5 lg:rounded-full shadow-lg justify-center main-bg">
+                {buttons &&
+                  buttons.map((item) => (
+                    <Tab key={item.id}>
+                      <button className="focus:outline-none rounded-full px-4 py-2 mx-2 mb-3 bg-opacity-50 font-semibold">
+                        {item.text}
+                      </button>
+                    </Tab>
+                  ))}
+              </div>
+            </div>
+          </TabList>
+        </Tabs>
+      </div>
+    </>
   );
 }

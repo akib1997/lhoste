@@ -31,26 +31,29 @@ export default function ValuePropositions() {
   return (
     <>
       <div
-        className="lg:pb-32 pb-16 relative z-10 -mt-52 lg:-mt-72"
+        className="lg:pb-32 pb-16 relative z-10 pt-80 xl:pt-96 -mt-32"
         style={{ backgroundColor: "#F4F4FF" }}
       >
         <Container>
-          <h2 className="text-4xl font-bold text-center text-indigo-900 mb-8">
+          <h2 className="text-4xl font-bold text-center black-color mb-8">
             Value Proposition
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 my-8 lg:my-20">
             {items &&
               items.map((item) => (
                 <div className="text-center" key={item.id}>
-                  <div className="inline-flex items-center justify-center bg-purple-400 bg-opacity-50 rounded-full shadow-xl">
+                  <div
+                    className="w-40 h-40 mx-auto flex items-center justify-center rounded-full shadow-xl"
+                    style={{ backgroundColor: "rgba(36, 13, 133, 0.15)" }}
+                  >
                     <img
                       src={`/assets/${item.img}`}
-                      className="w-20 h-20 block m-6 mb-4"
+                      className="w-20 h-20"
                       alt={item.head}
                     />
                   </div>
                   <div className="p-6">
-                    <h6 className="text-lg font-bold text-indigo-900 mb-2">
+                    <h6 className="text-2xl font-bold black-color mb-2 mt-4">
                       {" "}
                       {item.head}{" "}
                     </h6>
@@ -61,7 +64,7 @@ export default function ValuePropositions() {
           </div>
           <div className="text-center">
             <Link href="/">
-              <a className="bg-blue-900 text-white inline-block px-12 py-2 rounded font-bold">
+              <a className="btn-bg text-white inline-block px-8 md:px-16 py-2 md:py-4 rounded-md mt-6 font-bold">
                 Learn more about the product
               </a>
             </Link>

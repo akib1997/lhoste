@@ -14,15 +14,23 @@ export default function Showcase() {
         <Container>
           <div className="lg:flex items-center">
             <div className="lg:w-1/2">
-              <h2 className="text-3xl text-blue-900 font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl black-color font-bold mb-4">
                 Manage & automate purchase requisitions
               </h2>
-              <p>
-                Define requirements jointly and in a guided way in one central
-                place
-              </p>
+              <div className="flex mb-4">
+                <img
+                  src="assets/triengle.svg"
+                  className="mr-2"
+                  alt="triengle"
+                />
+                <span>
+                  Define requirements jointly and in a guided way in one central
+                  place
+                </span>
+              </div>
+
               <Link href="/">
-                <a className="bg-blue-900 text-white inline-block font-bold px-10 py-2 rounded mt-12">
+                <a className="btn-bg text-white inline-block px-8 md:px-16 py-2 lg:mb-0 mb-6 md:py-4 rounded-md mt-12 font-bold">
                   Learn more
                 </a>
               </Link>
@@ -54,18 +62,13 @@ export default function Showcase() {
               <div>
                 <img
                   src="/assets/identify.svg"
-                  className="w-full lg:w-3/4 mx-auto lg:mr-auto relative z-20"
-                  alt="Shape"
-                />
-                <img
-                  src="/assets/ellipse.svg"
-                  className="absolute top-0 right-0 z-10"
+                  className="w-full"
                   alt="Shape"
                 />
               </div>
             </div>
             <div className="lg:w-1/2 lg:order-2 order-1">
-              <h2 className="text-3xl text-blue-900 font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl black-color font-bold mb-4">
                 Identify and assess all relevant suppliers
               </h2>
               <ul>
@@ -90,7 +93,7 @@ export default function Showcase() {
                 </li>
               </ul>
               <Link href="/">
-                <a className="bg-blue-900 text-white inline-block font-bold px-10 py-2 rounded mt-12 lg:mb-0 mb-8">
+                <a className="btn-bg text-white inline-block px-8 md:px-16 py-2 lg:mb-0 mb-6 md:py-4 rounded-md mt-12 font-bold">
                   Learn more
                 </a>
               </Link>
@@ -103,7 +106,7 @@ export default function Showcase() {
         <Container>
           <div className="lg:flex items-center relative z-20">
             <div className="lg:w-1/2">
-              <h2 className="text-3xl text-blue-900 font-bold mb-6 lg:mt-0 mt-8">
+              <h2 className="text-3xl md:text-4xl black-color font-bold mb-4">
                 Bring all available data into your processes
               </h2>
               <ul>
@@ -130,7 +133,7 @@ export default function Showcase() {
                 </li>
               </ul>
               <Link href="/">
-                <a className="bg-blue-900 text-white inline-block font-bold px-10 py-2 rounded mt-12">
+                <a className="btn-bg text-white inline-block px-8 md:px-16 py-2 lg:mb-0 mb-6 md:py-4 rounded-md mt-12 font-bold">
                   Learn more
                 </a>
               </Link>

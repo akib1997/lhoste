@@ -2,9 +2,9 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Container from "../components/Layout/Container";
-import Footer from "../components/Layout/Footer";
 
 import { FiSearch } from "react-icons/fi";
+import PostBox from "../components/PostBox";
 
 export default function diolouge() {
   const tags = [
@@ -40,7 +40,7 @@ export default function diolouge() {
   const allPosts = [
     {
       id: 1,
-      img: ``,
+      img: `https://images.unsplash.com/photo-1622570230313-3332b620271c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80`,
       title: "No dedicated indirect procurement unit / systems in use.",
       text: "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
       tags: ["Best Practises", "automation", "technology"],
@@ -50,7 +50,7 @@ export default function diolouge() {
     },
     {
       id: 2,
-      img: `https://images.unsplash.com/photo-1622570230313-3332b620271c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80`,
+      img: ``,
       title: "No dedicated indirect procurement unit / systems in use.",
       text: "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
       tags: ["Best Practises", "automation", "technology"],
@@ -90,7 +90,7 @@ export default function diolouge() {
     },
     {
       id: 6,
-      img: ``,
+      img: `https://images.unsplash.com/photo-1600188769099-d25b4ec79659?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXV0aG9yfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60`,
       title: "No dedicated indirect procurement unit / systems in use.",
       text: "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
       tags: ["Best Practises", "automation", "technology"],
@@ -125,25 +125,25 @@ export default function diolouge() {
       <Head>
         <title>Dillouge | Lhots</title>
       </Head>
-      <section className="pt-12 relative">
+      <section className="pt-12 lg:pt-32 relative">
         <Container>
           <div className="text-center relative z-20">
-            <h1 className="font-bold text-4xl lg:w-2/3 mx-auto text-color">
+            <h1 className="font-bold text-3xl md:text-4xl lg:w-2/3 mx-auto black-color">
               Our source for topics relating to procurement, tactical spend and
               our view on the modern business world
             </h1>
           </div>
         </Container>
         <img
-          src="/assets/mountain-background.svg"
-          className="w-full -mt-32 z-10"
+          src="/assets/frame-168.png"
+          className="w-full z-10 lg:-mt-32"
           alt="Book Demo"
         />
       </section>
-      <section className="pb-12" style={{ backgroundColor: "#f4f4ff" }}>
+      <section className="pb-12 main-bg">
         <div className="bg-white py-3">
           <Container>
-            <div className="lg:flex items-center">
+            <div className="lg:flex items-center justify-between">
               <ul className="flex flex-wrap justify-center">
                 {tags.map((tag, i) => (
                   <li key={i}>
@@ -155,7 +155,7 @@ export default function diolouge() {
                   </li>
                 ))}
               </ul>
-              <div className="w-full sm:w-60 flex bg-gray-200 rounded-lg lg:mr-auto mx-auto">
+              <div className="w-full sm:w-60 flex bg-gray-200 rounded-lg mx-auto lg:mx-0">
                 <input
                   type="text"
                   name="search"
@@ -172,67 +172,25 @@ export default function diolouge() {
         </div>
         <Container>
           <div className="py-20">
-            <h2 className="text-4xl font-bold text-indigo-900 mb-12">
+            <h2 className="text-4xl font-bold black-color mb-12">
               Latest posts
             </h2>
-            <div className="md:grid-cols-2 grid gap-3 grid-cols-1">
-              {posts &&
-                posts.map((post) => (
-                  <div className="w-full" key={post.id}>
-                    <Link href={`/blog/${post.id}`}>
-                      <a className="post-box shadow-xl overflow-hidden rounded-2xl bg-white block">
-                        <img
-                          src={post.img}
-                          alt={post.title}
-                          className="w-full h-72 object-cover"
-                        />
-                        <div className="p-4 md:p-6 relative">
-                          <div className="absolute w-1/3 h-1 bg-green-400 top-4 md:top-6 left-4 md:left-6"></div>
-                          <h3 className="text-2xl font-bold py-2">
-                            {post.title}
-                          </h3>
-                          <p className="pb-6">{post.text}</p>
-                          <ul className="flex pb-6 flex-wrap">
-                            {post.tags &&
-                              post.tags.map((tag, i) => (
-                                <li key={i}>
-                                  <Link href="#">
-                                    <a className="inline-block px-5 py-2 rounded-full tag-bg capitalize mr-4 font-bold text-indigo-900 text-sm mb-3">
-                                      {tag}
-                                    </a>
-                                  </Link>
-                                </li>
-                              ))}
-                          </ul>
-                          <div className="flex items-center">
-                            <img
-                              src={post.authorImage}
-                              alt={post.author}
-                              className="w-12 h-12 object-cover mr-5 rounded-full"
-                            />
-                            <h6 className="font-normal">{post.author}</h6>
-                          </div>
-                        </div>
-                      </a>
-                    </Link>
-                  </div>
-                ))}
-            </div>
+            <PostBox posts={posts} />
           </div>
         </Container>
       </section>
       <section className="py-20" style={{ backgroundColor: "#78DAB1" }}>
         <Container>
           <div className="flex md:flex-nowrap flex-wrap items-center">
-            <h2 className="font-bold text-3xl lg:text-5xl leading-normal md:mb-0 mb-8">
+            <h2 className="font-bold text-3xl lg:text-5xl leading-normal md:mb-0 mb-8 color-blue">
               You want all the insights and expertise directly to your inbox?
               Sign up here for our newsletter
             </h2>
             <form className="md:max-w-md w-full md:ml-12">
               <input
-                type="email"
-                name="email"
-                id="email"
+                type="email1"
+                name="email1"
+                id="email1"
                 placeholder="Add your Mail here..."
                 className="w-full p-4 bg-white focus:outline-none rounded block mb-4"
               />
@@ -282,57 +240,10 @@ export default function diolouge() {
         </Container>
       </section>
 
-      <section className="py-20">
+      <section className="py-20 main-bg">
         <Container>
-          <h2 className="text-4xl font-bold mb-12 text-indigo-900">
-            All posts
-          </h2>
-          <div className="hello">
-            {allPosts &&
-              allPosts.map((post) => (
-                <div className="box" key={post.id}>
-                  <Link href={`/blog/${post.id}`}>
-                    <a className="post-box shadow-xl overflow-hidden rounded-2xl bg-white block">
-                      {post.img === "" ? null : (
-                        <img
-                          src={post.img}
-                          alt={post.title}
-                          className="w-full h-72 object-cover"
-                        />
-                      )}
-
-                      <div className="p-4 md:p-6 relative">
-                        <div className="absolute w-1/3 h-1 bg-green-400 top-4 md:top-6 left-4 md:left-6"></div>
-                        <h3 className="text-2xl font-bold py-2">
-                          {post.title}
-                        </h3>
-                        <p className="pb-6">{post.text}</p>
-                        <ul className="flex pb-6 flex-wrap">
-                          {post.tags &&
-                            post.tags.map((tag, i) => (
-                              <li key={i}>
-                                <Link href="#">
-                                  <a className="inline-block px-5 py-2 rounded-full tag-bg capitalize mr-4 font-bold text-indigo-900 text-sm mb-3">
-                                    {tag}
-                                  </a>
-                                </Link>
-                              </li>
-                            ))}
-                        </ul>
-                        <div className="flex items-center">
-                          <img
-                            src={post.authorImage}
-                            alt={post.author}
-                            className="w-12 h-12 object-cover mr-5 rounded-full"
-                          />
-                          <h6 className="font-normal">{post.author}</h6>
-                        </div>
-                      </div>
-                    </a>
-                  </Link>
-                </div>
-              ))}
-          </div>
+          <h2 className="text-4xl font-bold mb-12 black-color">All posts</h2>
+          <PostBox posts={allPosts} />
         </Container>
       </section>
     </>

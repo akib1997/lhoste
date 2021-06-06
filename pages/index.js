@@ -4,6 +4,7 @@ import Banner from "../components/HomePage/Banner";
 import ValuePropositions from "../components/HomePage/ValuePropositions";
 import GoodCompany from "../components/HomePage/GoodCompany";
 import Showcase from "../components/HomePage/Showcase";
+import AllTab from "../components/HomePage/Tabs";
 
 export default function Home({ pageData }) {
   return (

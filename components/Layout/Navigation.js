@@ -15,7 +15,7 @@ export default function Header() {
     <header className="bg-white">
       <nav className="shadow py-3 sm:py-6">
         <Container>
-          <div className="relative md:flex items-center justify-between">
+          <div className="relative lg:flex items-center justify-between">
             <div className="flex items-center">
               <div className="relative">
                 <img
@@ -29,7 +29,7 @@ export default function Header() {
                   </span>
                 </div>
               </div>
-              <div className="ml-auto flex items-center md:hidden">
+              <div className="ml-auto flex items-center lg:hidden">
                 <button
                   type="button"
                   className="focus:outline-none inline-flex items-center justify-center rounded-md text-gray-400"
@@ -74,11 +74,11 @@ export default function Header() {
               className={`${
                 menu
                   ? "left-0 opacity-100 translate-x-0"
-                  : "-left-full bg-opacity-100 -translate-x-4 md:-translate-x-0"
-              } ml-auto md:static absolute top-20 z-50 md:w-auto w-full bg-gray-300 md:bg-transparent p-4 md:p-0 opacity-0 md:opacity-100 transform`}
+                  : "-left-full bg-opacity-100 -translate-x-4 lg:-translate-x-0"
+              } ml-auto lg:static absolute top-20 z-50 lg:w-auto w-full bg-gray-300 lg:bg-transparent p-4 lg:p-0 opacity-0 lg:opacity-100 transform`}
             >
-              <ul className="md:flex">
-                <li className="md:pb-0 pb-3">
+              <ul className="lg:flex">
+                <li className="lg:pb-0 pb-3">
                   <Link href="/">
                     <a
                       className={`
@@ -93,14 +93,14 @@ export default function Header() {
                   </Link>
                 </li>
 
-                <li className="md:pb-0 pb-3">
+                <li className="lg:pb-0 pb-3">
                   <Link href="/">
                     <a className="px-3 py-2 md:ml-4 xl:ml-8 font-normal hover:text-gray-700 transition-all">
                       Product
                     </a>
                   </Link>
                 </li>
-                <li className="md:pb-0 pb-3">
+                <li className="lg:pb-0 pb-3">
                   <Link href="/diolouge">
                     <a
                       className={`
@@ -114,7 +114,7 @@ export default function Header() {
                     </a>
                   </Link>
                 </li>
-                <li className="md:pb-0 pb-3">
+                <li className="lg:pb-0 pb-3">
                   <Link href="/about">
                     <a
                       className={`
@@ -128,14 +128,14 @@ export default function Header() {
                     </a>
                   </Link>
                 </li>
-                <li className="md:pb-0 pb-3">
+                <li className="lg:pb-0 pb-3">
                   <Link href="/">
                     <a className="px-3 py-2 md:ml-4 xl:ml-8 font-normal hover:text-gray-700 transition-all">
                       US
                     </a>
                   </Link>
                 </li>
-                <li className="md:pb-0 pb-3">
+                <li className="lg:pb-0 pb-3">
                   <Link href="/">
                     <a className="px-3 py-2 md:ml-4 xl:ml-8 font-bold text-indigo-800 bg-gray-500 bg-opacity-40 transition-all rounded capitalize">
                       Book demo

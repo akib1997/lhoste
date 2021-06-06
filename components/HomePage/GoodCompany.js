@@ -3,20 +3,20 @@ import Container from "../Layout/Container";
 
 export default function GoodCompany() {
   return (
-    <div className="pt-20 pb- relative" style={{ backgroundColor: "#F4F4FF" }}>
+    <div className="pt-20 pb-60 md:pb-80 relative main-bg -mb-72">
       <img
         src={`/assets/fill-12.svg`}
-        className="block absolute mx-auto -top-20 left-0 right-0"
+        className="block absolute mx-auto -top-36 left-0 right-0"
         alt="Fill"
       />
       <img
         src={`/assets/fill-13.svg`}
-        className="block absolute pl-32 mx-auto -top-16 left-0 right-0"
+        className="block absolute pl-32 mx-auto -top-32 left-0 right-0"
         alt="Fill"
       />
       <Container>
-        <div className="mt-20 text-center">
-          <h2 className="text-4xl font-bold text-blue-900 mb-12">
+        <div className="md:w-3/4 mx-auto md:mt-20 text-center">
+          <h2 className="text-3xl md:text-5xl font-bold black-color mb-12">
             Lhotse, at 8,516 meters, is the fourth highest mountain on planet
             Earth.
           </h2>
