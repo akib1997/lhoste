@@ -1,12 +1,22 @@
 import React from "react";
 import Link from "next/link";
+import Masonry from "react-masonry-css";
 
 export default function PostBox({ posts }) {
+  const breakpointColumnsObj = {
+    default: 2,
+    700: 1,
+  };
+
   return (
-    <div className="dynamic-col">
+    <Masonry
+      breakpointCols={breakpointColumnsObj}
+      className="my-masonry-grid"
+      columnClassName="my-masonry-grid_column"
+    >
       {posts &&
         posts.map((post) => (
-          <div className="w-full box" key={post.id}>
+          <div className="mb-6" key={post.id}>
             <Link href={`/blog/${post.id}`}>
               <a className="post-box shadow-xl overflow-hidden rounded-2xl bg-white block">
                 {post.img === "" ? null : (
@@ -48,6 +58,6 @@ export default function PostBox({ posts }) {
             </Link>
           </div>
         ))}
-    </div>
+    </Masonry>
   );
 }
