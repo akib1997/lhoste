@@ -147,7 +147,7 @@ export default function diolouge() {
               <ul className="flex flex-wrap justify-center">
                 {tags.map((tag, i) => (
                   <li key={i}>
-                    <Link href="#">
+                    <Link href="/">
                       <a className="inline-block lg:px-5 px-3 lg:py-2 py-1 rounded-full tag-bg capitalize lg:mr-4 mr-2 font-bold text-indigo-900 text-sm lg:mb-0 mb-3">
                         {tag}
                       </a>
