@@ -68,7 +68,7 @@ export default function AllTab() {
             ))}
             <TabList>
               <div className="text-center p-4">
-                <div className="inline-flex flex-wrap p-2 mt-5 lg:rounded-full shadow-md justify-center bg-gray-50">
+                <div className="inline-flex flex-wrap pt-3 mt-5 lg:rounded-full shadow-md justify-center bg-gray-50">
                   {buttons &&
                     buttons.map((item) => (
                       <Tab key={item.id}>
