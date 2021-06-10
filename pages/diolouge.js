@@ -240,7 +240,7 @@ export default function diolouge() {
         </Container>
       </section>
 
-      <section className="py-20 main-bg">
+      <section className="py-20 main-bg pb-80 -mb-72">
         <Container>
           <h2 className="text-4xl font-bold mb-12 black-color">All posts</h2>
           <PostBox posts={allPosts} />
