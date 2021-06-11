@@ -80,7 +80,7 @@ export default function Header() {
                   : "-left-full bg-opacity-100 -translate-x-4 lg:-translate-x-0"
               } ml-auto lg:static absolute top-20 z-50 lg:w-auto w-full bg-gray-300 lg:bg-transparent p-4 lg:p-0 opacity-0 lg:opacity-100 transform`}
             >
-              <ul className="lg:flex">
+              <ul className="lg:flex items-center">
                 <li className="lg:pb-0 pb-3">
                   <Link href="/">
                     <a
@@ -89,7 +89,7 @@ export default function Header() {
                           router.pathname == "/"
                             ? "font-bold text-gray-700"
                             : ""
-                        } px-3 py-2 md:ml-4 xl:ml-8 font-normal hover:text-gray-700 transition-all`}
+                        } px-3 py-2 md:ml-2 xl:ml-4 font-normal hover:text-gray-700 transition-all block`}
                     >
                       Home
                     </a>
@@ -98,7 +98,7 @@ export default function Header() {
 
                 <li className="lg:pb-0 pb-3">
                   <Link href="/">
-                    <a className="px-3 py-2 md:ml-4 xl:ml-8 font-normal hover:text-gray-700 transition-all">
+                    <a className="px-3 py-2 md:ml-2 xl:ml-4 font-normal hover:text-gray-700 transition-all block">
                       Product
                     </a>
                   </Link>
@@ -111,7 +111,7 @@ export default function Header() {
                           router.pathname == "/diolouge"
                             ? "font-bold text-gray-700"
                             : ""
-                        } px-3 py-2 md:ml-4 xl:ml-8 font-normal hover:text-gray-700 transition-all`}
+                        } px-3 py-2 md:ml-2 xl:ml-4 font-normal hover:text-gray-700 transition-all block`}
                     >
                       Diolouge
                     </a>
@@ -125,7 +125,7 @@ export default function Header() {
                           router.pathname == "/about"
                             ? "font-bold text-gray-700"
                             : ""
-                        } px-3 py-2 md:ml-4 xl:ml-8 font-normal hover:text-gray-700 transition-all`}
+                        } px-3 py-2 md:ml-2 xl:ml-4 font-normal hover:text-gray-700 transition-all block`}
                     >
                       About
                     </a>
@@ -133,14 +133,17 @@ export default function Header() {
                 </li>
                 <li className="lg:pb-0 pb-3">
                   <Link href="/">
-                    <a className="px-3 py-2 md:ml-4 xl:ml-8 font-normal hover:text-gray-700 transition-all">
-                      US
+                    <a
+                      className="px-3 rounded py-2 md:ml-2 xl:ml-4 font-normal transition-all inline-block md:block"
+                      style={{ backgroundColor: "#F4F4FF" }}
+                    >
+                      <img src="./assets/us.png" alt="us" />
                     </a>
                   </Link>
                 </li>
                 <li className="lg:pb-0 pb-3">
                   <Link href="/">
-                    <a className="px-3 py-2 md:ml-4 xl:ml-8 font-bold text-indigo-800 bg-gray-500 bg-opacity-40 transition-all rounded capitalize">
+                    <a className="px-3 py-2 md:ml-4 font-bold text-indigo-800 bg-gray-500 bg-opacity-40 transition-all rounded capitalize">
                       Book demo
                     </a>
                   </Link>
