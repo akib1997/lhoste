@@ -23,7 +23,10 @@ export default function Header() {
                   alt="logo"
                   className="h-12 sm:w-32 w-24"
                 />
-                <div className="sm:px-2 px-1 sm:py-1 font-bold text-indigo-800 bg-gray-500 bg-opacity-40 transition-all rounded rounded-bl-none absolute top-0 left-28 sm:-top-2 sm:left-36">
+                <div
+                  className="sm:px-2 px-1 sm:py-1 font-bold text-indigo-800 bg-opacity-40 rounded-md rounded-bl-none absolute top-0 left-24 sm:-top-3 sm:left-32 ml-2"
+                  style={{ backgroundColor: "rgba(36, 13, 133, 0.15)" }}
+                >
                   <span className="whitespace-nowrap text-xs sm:text-sm">
                     We're hiring
                   </span>
