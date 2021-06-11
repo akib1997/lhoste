@@ -17,19 +17,17 @@ export default function Header() {
         <Container>
           <div className="relative lg:flex items-center justify-between">
             <div className="flex items-center">
-              <div className="relative">
+              <div className="flex">
                 <img
                   src={`/assets/logo.svg`}
                   alt="logo"
-                  className="h-12 sm:w-32 w-24"
+                  className="h-12 sm:w-32 w-24 self-end"
                 />
                 <div
-                  className="sm:px-2 px-1 sm:py-1 font-bold text-indigo-800 bg-opacity-40 rounded-md rounded-bl-none absolute top-0 left-24 sm:-top-3 sm:left-32 ml-2"
+                  className="self-start text-xs sm:text-sm sm:px-2 px-1 ml-3 sm:py-1 font-bold text-indigo-800 rounded-md rounded-bl-none"
                   style={{ backgroundColor: "rgba(36, 13, 133, 0.15)" }}
                 >
-                  <span className="whitespace-nowrap text-xs sm:text-sm">
-                    We're hiring
-                  </span>
+                  We're hiring
                 </div>
               </div>
               <div className="ml-auto flex items-center lg:hidden">

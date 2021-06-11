@@ -8,7 +8,7 @@ export default function Banner() {
     <>
       <section className="mt-32 relative">
         <Container>
-          <div className="text-center sm:w-3/4 mx-auto">
+          <div className="text-center sm:w-3/4 mx-auto relative z-10">
             <h1 className="text-3xl md:text-5xl black-color font-bold mb-4">
               The smarter way to manage tactical spend{" "}
             </h1>
