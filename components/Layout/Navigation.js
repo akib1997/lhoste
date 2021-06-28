@@ -95,7 +95,7 @@ export default function Header() {
                 </li>
 
                 <li className="lg:pb-0 pb-3">
-                  <Link href="/">
+                  <Link href="/product">
                     <a className="px-3 py-2 md:ml-2 xl:ml-4 font-normal hover:text-gray-700 transition-all block">
                       Product
                     </a>
