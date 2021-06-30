@@ -222,7 +222,7 @@ export default function product() {
             <img
               src="./assets/no-one.svg"
               alt="No one knows better what’s in your supplier base than Lhotse"
-              className="absolute right-0 top-1/2 sm:top-1/3 lg:top-1/4 z-10 w-full max-w-[100%] sm:max-w-[70%] md:max-w-[50%]"
+              className="absolute right-0 top-1/2 sm:top-1/3 lg:top-1/4 z-10 w-full max-w-[100%] sm:max-w-[70%] md:max-w-[50%] max-h-[40rem]"
             />
           </div>
         </Container>
