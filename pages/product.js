@@ -78,7 +78,7 @@ export default function product() {
               <img
                 src="/assets/height-adjustable.svg"
                 alt="Enable your organization to source anything in the best way"
-                className="lg:max-w-sm w-full mx-auto lg:ml-auto block relative -bottom-24 z-10"
+                className="lg:max-w-sm w-full lg:ml-auto block relative -bottom-24 z-10"
               />
             </div>
           </div>
@@ -165,7 +165,7 @@ export default function product() {
               <img
                 src="./assets/interect.svg"
                 alt="Get instant supplier recommendations"
-                className="w-full lg:mt-0 mt-12"
+                className="w-full xl:w-2/3 ml-auto lg:mt-0 mt-12"
               />
             </div>
           </div>
