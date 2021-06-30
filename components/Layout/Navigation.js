@@ -86,8 +86,8 @@ export default function Header() {
                         ${
                           router.pathname == "/"
                             ? "font-bold text-gray-700"
-                            : ""
-                        } px-3 py-2 md:ml-2 xl:ml-4 font-normal hover:text-gray-700 transition-all block`}
+                            : "font-normal"
+                        } px-3 py-2 md:ml-2 xl:ml-4 hover:text-gray-700 transition-all block`}
                     >
                       Home
                     </a>
@@ -96,7 +96,14 @@ export default function Header() {
 
                 <li className="lg:pb-0 pb-3">
                   <Link href="/product">
-                    <a className="px-3 py-2 md:ml-2 xl:ml-4 font-normal hover:text-gray-700 transition-all block">
+                    <a
+                      className={`
+                        ${
+                          router.pathname == "/product"
+                            ? "font-bold text-gray-700"
+                            : "font-normal"
+                        } px-3 py-2 md:ml-2 xl:ml-4 hover:text-gray-700 transition-all block`}
+                    >
                       Product
                     </a>
                   </Link>
@@ -108,8 +115,8 @@ export default function Header() {
                         ${
                           router.pathname == "/diolouge"
                             ? "font-bold text-gray-700"
-                            : ""
-                        } px-3 py-2 md:ml-2 xl:ml-4 font-normal hover:text-gray-700 transition-all block`}
+                            : "font-normal"
+                        } px-3 py-2 md:ml-2 xl:ml-4 hover:text-gray-700 transition-all block`}
                     >
                       Diolouge
                     </a>
@@ -122,8 +129,8 @@ export default function Header() {
                         ${
                           router.pathname == "/about"
                             ? "font-bold text-gray-700"
-                            : ""
-                        } px-3 py-2 md:ml-2 xl:ml-4 font-normal hover:text-gray-700 transition-all block`}
+                            : "font-normal"
+                        } px-3 py-2 md:ml-2 xl:ml-4 hover:text-gray-700 transition-all block`}
                     >
                       About
                     </a>

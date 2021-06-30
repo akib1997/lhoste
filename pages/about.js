@@ -60,7 +60,7 @@ export default function about() {
         <title>About | Lhots</title>
       </Head>
 
-      <section className="pt-32 relative bg-white">
+      <section className="mt-32 relative bg-white pb-60 pt-20">
         <Container>
           <div className="z-20 relative lg:w-2/3">
             <h1 className="text-4xl font-bold mb-6">
@@ -82,8 +82,8 @@ export default function about() {
           </div>
         </Container>
         <img
-          src="/assets/mountain-background.svg"
-          className="w-full -mt-32 z-10"
+          src="/assets/about-banner.png"
+          className="w-full max-h-[40rem] z-10 absolute bottom-0 right-0"
           alt="Book Demo"
         />
       </section>
