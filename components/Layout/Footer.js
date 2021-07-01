@@ -13,6 +13,7 @@ export default function Footer() {
       text: "This is a great Customer Quote. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.Lorem ipsum dolor sit amet, consetetur.",
       img: `https://images.unsplash.com/photo-1568316674077-d72ee56de61c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60`,
       position: "CEO of a great Company",
+      icon: "homotogo.svg",
     },
     {
       id: 2,
@@ -20,6 +21,7 @@ export default function Footer() {
       text: "This is a great Customer Quote. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.Lorem ipsum dolor sit amet, consetetur.",
       img: `https://images.unsplash.com/photo-1560250097-0b93528c311a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60`,
       position: "CEO of a great Company",
+      icon: "clark.svg",
     },
   ];
 
@@ -44,10 +46,19 @@ export default function Footer() {
                   />
                   <div className="py-3 md:px-6 px-3 text-left">
                     <p>{data.text}</p>
-                    <h6 className="text-xl font-bold black-color mt-6">
-                      {data.title}
-                    </h6>
-                    <span className="text-sm"> {data.position} </span>
+                    <div className="flex justify-between items-center mt-6">
+                      <div>
+                        <h6 className="text-xl font-bold black-color">
+                          {data.title}
+                        </h6>
+                        <span className="text-sm"> {data.position} </span>
+                      </div>
+                      <img
+                        src={`./assets/${data.icon}`}
+                        alt={data.title}
+                        className="block max-w-[8rem]"
+                      />
+                    </div>
                   </div>
                 </div>
               ))}
