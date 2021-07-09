@@ -12,28 +12,37 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white">
-      <nav className="shadow py-3 sm:py-6">
+    <header className="bg-white sticky top-0 left-0 w-full z-50">
+      <nav className="shadow py-3 sm:py-5">
         <Container>
           <div className="relative lg:flex items-center justify-between">
             <div className="flex items-center">
               <div className="flex">
-                <img
-                  src={`/assets/logo.svg`}
-                  alt="logo"
-                  className="h-12 sm:w-32 w-24 self-end"
-                />
-                <div
-                  className="self-start text-xs sm:text-sm sm:px-2 px-1 ml-3 sm:py-1 font-bold text-indigo-800 rounded-md rounded-bl-none"
-                  style={{ backgroundColor: "rgba(36, 13, 133, 0.15)" }}
+                <a
+                  href="https://lhotse.jobs.personio.de/"
+                  target="_blank"
+                  className="block"
+                >
+                  <img
+                    src={`/assets/logo.svg`}
+                    alt="logo"
+                    className="h-8 sm:w-32 w-24 self-end"
+                  />
+                </a>
+                <span
+                  className="self-start sm:px-2 px-1 ml-2 sm:py-1 font-bold text-colorThree rounded-md rounded-bl-none -mt-2"
+                  style={{
+                    backgroundColor: "rgba(36, 13, 133, 0.15)",
+                    fontSize: "10px",
+                  }}
                 >
                   We're hiring
-                </div>
+                </span>
               </div>
               <div className="ml-auto flex items-center lg:hidden">
                 <button
                   type="button"
-                  className="focus:outline-none inline-flex items-center justify-center rounded-md text-gray-400"
+                  className="focus:outline-none inline-flex items-center justify-center rounded-md text-colorTwoy-400"
                   onClick={handleMenu}
                 >
                   <svg
@@ -85,9 +94,9 @@ export default function Header() {
                       className={`
                         ${
                           router.pathname == "/"
-                            ? "font-bold text-gray-700"
+                            ? "font-bold text-colorSeven"
                             : "font-normal"
-                        } px-3 py-2 md:ml-2 xl:ml-4 hover:text-gray-700 transition-all block`}
+                        } px-3 py-2 md:ml-2 xl:ml-4 text-colorSeven transition-all block`}
                     >
                       Home
                     </a>
@@ -99,10 +108,10 @@ export default function Header() {
                     <a
                       className={`
                         ${
-                          router.pathname == "/product"
-                            ? "font-bold text-gray-700"
+                          router.pathname === "/product"
+                            ? "font-bold text-colorSeven"
                             : "font-normal"
-                        } px-3 py-2 md:ml-2 xl:ml-4 hover:text-gray-700 transition-all block`}
+                        } px-3 py-2 md:ml-2 xl:ml-4 text-colorSix transition-all block`}
                     >
                       Product
                     </a>
@@ -114,9 +123,9 @@ export default function Header() {
                       className={`
                         ${
                           router.pathname == "/diolouge"
-                            ? "font-bold text-gray-700"
+                            ? "font-bold text-colorSeven"
                             : "font-normal"
-                        } px-3 py-2 md:ml-2 xl:ml-4 hover:text-gray-700 transition-all block`}
+                        } px-3 py-2 md:ml-2 xl:ml-4 text-colorSix transition-all block`}
                     >
                       Diolouge
                     </a>
@@ -128,9 +137,9 @@ export default function Header() {
                       className={`
                         ${
                           router.pathname == "/about"
-                            ? "font-bold text-gray-700"
+                            ? "font-bold text-colorSeven"
                             : "font-normal"
-                        } px-3 py-2 md:ml-2 xl:ml-4 hover:text-gray-700 transition-all block`}
+                        } px-3 py-2 md:ml-2 xl:ml-4 text-colorSix transition-all block`}
                     >
                       About
                     </a>
@@ -138,17 +147,17 @@ export default function Header() {
                 </li>
                 <li className="lg:pb-0 pb-3">
                   <Link href="/">
-                    <a
-                      className="px-3 rounded py-2 md:ml-2 xl:ml-4 font-normal transition-all inline-block md:block"
-                      style={{ backgroundColor: "#F4F4FF" }}
-                    >
+                    <a className="px-3 rounded-md py-2 md:ml-2 xl:ml-4 font-normal transition-all inline-block md:block bg-colorFive">
                       <img src="./assets/us.png" alt="us" />
                     </a>
                   </Link>
                 </li>
                 <li className="lg:pb-0 pb-3">
                   <Link href="/">
-                    <a className="px-3 py-2 md:ml-4 font-bold text-indigo-800 bg-gray-500 bg-opacity-40 transition-all rounded capitalize">
+                    <a
+                      className="px-3 py-2 md:ml-4 font-bold text-colorThree transition-all rounded capitalize text-sm"
+                      style={{ backgroundColor: "rgba(36, 13, 133, 0.15)" }}
+                    >
                       Book demo
                     </a>
                   </Link>

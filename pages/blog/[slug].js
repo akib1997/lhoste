@@ -38,7 +38,7 @@ export default function Details() {
                     alt={`Author`}
                     className="w-12 h-12 object-cover mr-5 rounded-full"
                   />
-                  <h6 className="font-normal text-gray-500">{`Hello World`}</h6>
+                  <h6 className="font-normal text-colorTwoy-500">{`Hello World`}</h6>
                 </div>
                 <div className="w-36 h-0.5 bg-green-400 my-8"></div>
                 <h3 className="text-4xl font-bold py-2 text-indigo-900">
@@ -54,7 +54,7 @@ export default function Details() {
               />
             </div>
           </div>
-          <p className="text-gray-500 mb-5 lg:mb-8 leading-relaxed text-base">
+          <p className="text-colorTwoy-500 mb-5 lg:mb-8 leading-relaxed text-base">
             Lhotse is the first and only Procurement solution you will need. We
             make sure your Loremipsum dolor sit amet... Lhotse enables your
             internal capabilities and makes sure you are in control of
@@ -67,7 +67,7 @@ export default function Details() {
             procurement processes all the way. We help you optimize your shared
             services centers and eliminate{" "}
           </p>
-          <p className="text-gray-500 mb-5 lg:mb-8 leading-relaxed text-base">
+          <p className="text-colorTwoy-500 mb-5 lg:mb-8 leading-relaxed text-base">
             outsourcing.Lhotse enables your internal capabilities and makes sure
             you are in control of procurement processes all the way. We help you
             optimize your shared services centers and eliminate
@@ -80,7 +80,7 @@ export default function Details() {
           <h4 className="font-bold text-3xl text-indigo-900 my-3">
             We help you optimize your shared services centers and eliminate{" "}
           </h4>
-          <p className="text-gray-500 mb-5 lg:mb-8 leading-relaxed text-base">
+          <p className="text-colorTwoy-500 mb-5 lg:mb-8 leading-relaxed text-base">
             outsourcing.Lhotse enables your internal capabilities and makes sure
             you are in control of procurement processes all the way. We help you
             optimize your shared services centers and eliminate
@@ -113,7 +113,7 @@ export default function Details() {
               />
             </div>
             <div className="lg:w-1/2 w-full lg:pl-12">
-              <p className="text-gray-500 mb-5 lg:mb-8 leading-relaxed text-base">
+              <p className="text-colorTwoy-500 mb-5 lg:mb-8 leading-relaxed text-base">
                 Lhotse is the first and only Procurement solution you will need.
                 We make sure your Loremipsum dolor sit amet... Lhotse enables
                 your internal capabilities and makes sure you are in control of
@@ -128,7 +128,7 @@ export default function Details() {
               </p>
             </div>
           </div>
-          <p className="text-gray-500 mb-5 lg:mb-8 leading-relaxed text-base">
+          <p className="text-colorTwoy-500 mb-5 lg:mb-8 leading-relaxed text-base">
             Lhotse is the first and only Procurement solution you will need. We
             make sure your Loremipsum dolor sit amet... Lhotse enables your
             internal capabilities and makes sure you are in control of
@@ -141,7 +141,7 @@ export default function Details() {
             procurement processes all the way. We help you optimize your shared
             services centers and eliminate
           </p>
-          <p className="text-gray-500 mb-5 lg:mb-8 leading-relaxed text-base">
+          <p className="text-colorTwoy-500 mb-5 lg:mb-8 leading-relaxed text-base">
             outsourcing.Lhotse enables your internal capabilities and makes sure
             you are in control of procurement processes all the way. We help you
             optimize your shared services centers and eliminate
@@ -154,7 +154,7 @@ export default function Details() {
           <h4 className="font-bold text-3xl text-indigo-900 my-3">
             We help you optimize your shared services centers and eliminate{" "}
           </h4>
-          <p className="text-gray-500 mb-5 lg:mb-8 leading-relaxed text-base">
+          <p className="text-colorTwoy-500 mb-5 lg:mb-8 leading-relaxed text-base">
             outsourcing.Lhotse enables your internal capabilities and makes sure
             you are in control of procurement processes all the way. We help you
             optimize your shared services centers and eliminate

@@ -67,9 +67,9 @@ export default function Footer() {
         <div className="pb-20 pt-8 border-b border-gray-400 border-opacity-50">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             <span className="text-white">Experience Lhotse. </span>
-            <span className="text-gray-400">Book a demo.</span>
+            <span className="text-colorTwoy-400">Book a demo.</span>
           </h2>
-          <p className="text-xl lg:w-2/3 text-gray-400">
+          <p className="text-xl lg:w-2/3 text-colorTwoy-400">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod.Lorem ipsum dolor sit amet, consetetur.
           </p>
@@ -80,7 +80,7 @@ export default function Footer() {
               name="email"
               id="email"
               placeholder="Add your mail here..."
-              className="focus:outline-none bg-white rounded px-4 py-3 mr-8 max-w-xs w-full text-gray-700"
+              className="focus:outline-none bg-white rounded px-4 py-3 mr-8 max-w-xs w-full text-colorTwoy-700"
             />
             <button
               type="submit"
@@ -107,7 +107,7 @@ export default function Footer() {
                     links1.map((link, i) => (
                       <li key={i}>
                         <Link href="/">
-                          <a className="uppercase inline-block font-normal text-gray-400 text-base mb-3 hover:font-bold hover:text-white">
+                          <a className="uppercase inline-block font-normal text-colorTwoy-400 text-base mb-3 hover:font-bold hover:text-white">
                             {link}
                           </a>
                         </Link>
@@ -119,7 +119,7 @@ export default function Footer() {
                     links2.map((link, i) => (
                       <li key={i}>
                         <Link href="/">
-                          <a className="uppercase inline-block font-normal text-gray-400 text-base mb-3 hover:font-bold hover:text-white">
+                          <a className="uppercase inline-block font-normal text-colorTwoy-400 text-base mb-3 hover:font-bold hover:text-white">
                             {" "}
                             {link}{" "}
                           </a>

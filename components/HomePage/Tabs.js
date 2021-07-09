@@ -44,7 +44,7 @@ export default function AllTab() {
   ];
   return (
     <>
-      <div className="shadow-xl rounded-2xl py-12 md:py-20 bg-white relative z-50 top-32">
+      <div className="shadow-xl rounded-2xl py-12 md:py-20 bg-white relative z-40 top-32">
         <Tabs>
           {tabData.map((data) => (
             <TabPanel key={data.id}>
@@ -58,7 +58,7 @@ export default function AllTab() {
                 </div>
                 <div className="lg:w-1/2 lg:pr-12">
                   <h3 className="text-3xl font-bold mb-4">{data.title}</h3>
-                  <p>{data.text}</p>
+                  <p className="text-lg text-colorTwo">{data.text}</p>
                 </div>
               </div>
             </TabPanel>

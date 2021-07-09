@@ -57,7 +57,7 @@ export default function ValuePropositions() {
                       {" "}
                       {item.head}{" "}
                     </h6>
-                    <p className="text-gray-400"> {item.text} </p>
+                    <p className="text-colorTwoy-400"> {item.text} </p>
                   </div>
                 </div>
               ))}

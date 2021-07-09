@@ -69,7 +69,7 @@ export default function product() {
               <h1 className="text-3xl lg:text-4xl font-bold mb-6">
                 Enable your organization to source anything in the best way
               </h1>
-              <p className="lg:mb-12 leading-relaxed text-gray-500">
+              <p className="lg:mb-12 leading-relaxed text-colorTwoy-500">
                 Lhotse knows what and who is in your supplier base and makes
                 sure you foster relationships with the right suppliers
               </p>
@@ -103,10 +103,10 @@ export default function product() {
                   First
                 </p>
               </div>
-              <h3 className="text-3xl lg:text-4xl text-main font-bold mb-8">
+              <h3 className="text-3xl lg:text-4xl text-colorOne font-bold mb-8">
                 Specify your needs in a guided, intuitive way
               </h3>
-              <p className="text-gra">
+              <p className="text-colorTwo">
                 AI-enabled request definition and assessment at your fingertips,
                 from free text to tender
               </p>
@@ -136,10 +136,10 @@ export default function product() {
                   second
                 </p>
               </div>
-              <h3 className="text-3xl lg:text-4xl text-main font-bold mb-8">
+              <h3 className="text-3xl lg:text-4xl text-colorOne font-bold mb-8">
                 Get instant supplier recommendations
               </h3>
-              <p className="text-gra">
+              <p className="text-colorTwo">
                 Data-driven supplier recommendations without manual effort for
                 your teams
               </p>
@@ -153,10 +153,10 @@ export default function product() {
                   thired
                 </p>
               </div>
-              <h3 className="text-3xl lg:text-4xl text-main font-bold mb-8">
+              <h3 className="text-3xl lg:text-4xl text-colorOne font-bold mb-8">
                 Interact with suppliers
               </h3>
-              <p className="text-gra">
+              <p className="text-colorTwo">
                 Central communication hub for your supplier engagement - no
                 matter who’s on holiday
               </p>
@@ -184,10 +184,10 @@ export default function product() {
                   fourth
                 </p>
               </div>
-              <h3 className="text-3xl lg:text-4xl text-main font-bold mb-8">
+              <h3 className="text-3xl lg:text-4xl text-colorOne font-bold mb-8">
                 Receive and evaluate your options
               </h3>
-              <p className="text-gra">
+              <p className="text-colorTwo">
                 Powerful offer assessment and scenario analyses allow you to
                 make the decisions in a company-context
               </p>
@@ -307,7 +307,7 @@ export default function product() {
               </div>
             </div>
             <div className="mt-40">
-              <h2 className="font-bold text-3xl lg:text-4xl text-main mb-16 text-center">
+              <h2 className="font-bold text-3xl lg:text-4xl text-colorOne mb-16 text-center">
                 Lhotse works across the procurement maturity spectrum
               </h2>
               <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
@@ -318,10 +318,10 @@ export default function product() {
                       key={data.id}
                     >
                       <span className="w-36 h-0.5 bg-[#78DAB1] block mb-3"></span>
-                      <h5 className="font-bold text-main text-2xl mb-6">
+                      <h5 className="font-bold text-colorOne text-2xl mb-6">
                         {data.title}
                       </h5>
-                      <p className="text-gra">{data.content}</p>
+                      <p className="text-colorTwo">{data.content}</p>
                     </div>
                   ))}
               </div>
@@ -332,7 +332,7 @@ export default function product() {
       <section className="bg-white text-center relative pt-20 pb-8">
         <Container>
           <div className=" relative -mt-72">
-            <h2 className="text-main text-3xl lg:text-4xl font-bold mb-20">
+            <h2 className="text-colorOne text-3xl lg:text-4xl font-bold mb-20">
               Benefits
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4">
@@ -354,7 +354,7 @@ export default function product() {
                         {" "}
                         {item.head}{" "}
                       </h6>
-                      <p className="text-gray-400"> {item.text} </p>
+                      <p className="text-colorTwoy-400"> {item.text} </p>
                     </div>
                   </div>
                 ))}

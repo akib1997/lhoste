@@ -67,7 +67,7 @@ export default function about() {
               With 8,516 meters, Lhotse is one of the highest mountains on
               earth.{" "}
             </h1>
-            <p className="mb-12 leading-relaxed text-gray-500">
+            <p className="mb-12 leading-relaxed text-colorTwoy-500">
               The reason why you probably do not know it: It stands right next
               to Mount Everest. Attention is focused on the highest mountain on
               earth - only its smaller neighbor Lhotse remains unnoticed. It's a
