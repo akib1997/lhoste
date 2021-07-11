@@ -16,11 +16,11 @@ export default function GoodCompany() {
       />
       <Container>
         <div className="md:w-3/4 mx-auto md:mt-20 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold black-color mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold black-color mb-12">
             Lhotse, at 8,516 meters, is the fourth highest mountain on planet
             Earth.
           </h2>
-          <p className="mb-8">
+          <p className="mb-8 text-lg text-colorTwo">
             It sits right next to Mt. Everest – the reason that you have likely
             never heard of it. Attention is focussed on the highest mountain on
             Earth – neglecting its smaller sibling, Lhotse. The same holds true
@@ -28,7 +28,9 @@ export default function GoodCompany() {
             % of spend considered to be strategic. The final 20 % ‘tactical
             spend’ are overlooked – remaining largely unoptimised.
           </p>
-          <p>At Lhotse, we want to change that.</p>
+          <p className="text-lg text-colorTwo">
+            At Lhotse, we want to change that.
+          </p>
         </div>
       </Container>
     </div>

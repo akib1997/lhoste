@@ -14,16 +14,16 @@ export default function Showcase() {
         <Container>
           <div className="lg:flex items-center">
             <div className="lg:w-1/2">
-              <h2 className="text-3xl md:text-4xl black-color font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl black-color font-bold leading-tight mb-8 2xl:w-2/3">
                 Manage & automate purchase requisitions
               </h2>
               <div className="flex mb-4">
                 <img
                   src="assets/triengle.svg"
-                  className="mr-2"
+                  className="mr-2 self-start mt-1"
                   alt="triengle"
                 />
-                <span>
+                <span className="text-colorTwo text-xl">
                   Define requirements jointly and in a guided way in one central
                   place
                 </span>
@@ -40,8 +40,7 @@ export default function Showcase() {
                 <div className="bg-green-300 bg-opacity-60 w-60 h-60 left-0 right-0 mx-auto top-6 rounded-full absolute z-20"></div>
                 <img
                   src="/assets/form.svg"
-                  className="block mx-auto lg:ml-auto relative z-30 mt-16 w-full"
-                  style={{ maxWidth: "400px" }}
+                  className="block mx-auto lg:ml-auto relative z-30 mt-16 w-full max-w-md"
                   alt="Form"
                 />
               </div>
@@ -68,25 +67,27 @@ export default function Showcase() {
               </div>
             </div>
             <div className="lg:w-1/2 lg:order-2 order-1">
-              <h2 className="text-3xl md:text-4xl black-color font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl black-color leading-tight font-bold mb-8">
                 Identify and assess all relevant suppliers
               </h2>
               <ul>
                 <li className="flex mb-4">
                   <img
                     src="assets/triengle.svg"
-                    className="mr-2"
+                    className="mr-2 self-start mt-1"
                     alt="triengle"
                   />
-                  <span>Identify the right existing and new suppliers</span>
+                  <span className="text-colorTwo text-xl">
+                    Identify the right existing and new suppliers
+                  </span>
                 </li>
                 <li className="flex mb-4">
                   <img
                     src="assets/triengle.svg"
-                    className="mr-2"
+                    className="mr-2 self-start mt-1"
                     alt="triengle"
                   />
-                  <span>
+                  <span className="text-colorTwo text-xl">
                     Analyze supplier capability, performance, and compliance to
                     drive partnerships
                   </span>
@@ -106,17 +107,17 @@ export default function Showcase() {
         <Container>
           <div className="lg:flex items-center relative z-20">
             <div className="lg:w-1/2">
-              <h2 className="text-3xl md:text-4xl black-color font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl black-color font-bold leading-tight mb-8 2xl:w-3/4">
                 Bring all available data into your processes
               </h2>
               <ul>
                 <li className="flex mb-4">
                   <img
                     src="assets/triengle.svg"
-                    className="mr-2"
+                    className="mr-2 self-start mt-1"
                     alt="triengle"
                   />
-                  <span>
+                  <span className="text-colorTwo text-xl">
                     Integrate existing information from your ERP & eProcurement
                     systems
                   </span>
@@ -124,10 +125,10 @@ export default function Showcase() {
                 <li className="flex mb-4">
                   <img
                     src="assets/triengle.svg"
-                    className="mr-2"
+                    className="mr-2 self-start mt-1"
                     alt="triengle"
                   />
-                  <span>
+                  <span className="text-colorTwo text-xl">
                     Insights and recommendations are implemented into processes
                   </span>
                 </li>
