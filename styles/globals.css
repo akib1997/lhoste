@@ -68,6 +68,11 @@ input:checked + div svg {
   height: 120%;
 }
 
+.big-shadow {
+  -webkit-box-shadow: 0px 20px 40px 0px rgba(36, 14, 133, 0.1);
+  -moz-box-shadow: 0px 20px 40px 0px rgba(36, 14, 133, 0.1);
+  box-shadow: 0px 20px 40px 0px rgba(36, 14, 133, 0.1);
+}
 @media screen and (max-width: 1024px) {
   .traingle-height {
     height: 500px;

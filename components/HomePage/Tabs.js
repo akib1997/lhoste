@@ -65,11 +65,11 @@ export default function AllTab() {
           ))}
           <TabList>
             <div className="text-center">
-              <div className="inline-flex flex-wrap pt-3 mt-5 lg:rounded-full shadow-lg justify-center main-bg">
+              <div className="inline-flex flex-wrap pt-3 mt-5 lg:rounded-full big-shadow justify-center bg-colorFive">
                 {buttons &&
                   buttons.map((item) => (
                     <Tab key={item.id}>
-                      <button className="focus:outline-none rounded-full px-4 py-2 mx-2 mb-3 bg-opacity-50 font-semibold">
+                      <button className="focus:outline-none rounded-full px-6 py-2 mx-2 mb-3 bg-opacity-50 !font-bold text-sm">
                         {item.text}
                       </button>
                     </Tab>
