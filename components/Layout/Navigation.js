@@ -96,7 +96,7 @@ export default function Header() {
                           router.pathname == "/"
                             ? "font-bold text-colorSeven"
                             : "font-normal"
-                        } px-3 py-2 md:ml-2 xl:ml-4 text-colorSeven transition-all block`}
+                        } px-2 xl:px-3 py-1 xl:py-2 md:ml-2 xl:ml-4 text-colorSeven transition-all block`}
                     >
                       Home
                     </a>
@@ -111,7 +111,7 @@ export default function Header() {
                           router.pathname === "/product"
                             ? "font-bold text-colorSeven"
                             : "font-normal"
-                        } px-3 py-2 md:ml-2 xl:ml-4 text-colorSix transition-all block`}
+                        } px-2 xl:px-3 py-1 xl:py-2 md:ml-2 xl:ml-4 text-colorSix transition-all block`}
                     >
                       Product
                     </a>
@@ -125,7 +125,7 @@ export default function Header() {
                           router.pathname == "/diolouge"
                             ? "font-bold text-colorSeven"
                             : "font-normal"
-                        } px-3 py-2 md:ml-2 xl:ml-4 text-colorSix transition-all block`}
+                        } px-2 xl:px-3 py-1 xl:py-2 md:ml-2 xl:ml-4 text-colorSix transition-all block`}
                     >
                       Diolouge
                     </a>
@@ -139,7 +139,7 @@ export default function Header() {
                           router.pathname == "/about"
                             ? "font-bold text-colorSeven"
                             : "font-normal"
-                        } px-3 py-2 md:ml-2 xl:ml-4 text-colorSix transition-all block`}
+                        } px-2 xl:px-3 py-1 xl:py-2 md:ml-2 xl:ml-4 text-colorSix transition-all block`}
                     >
                       About
                     </a>
@@ -147,7 +147,7 @@ export default function Header() {
                 </li>
                 <li className="lg:pb-0 pb-3">
                   <Link href="/">
-                    <a className="px-3 rounded-md py-2 md:ml-2 xl:ml-4 font-normal transition-all inline-block md:block bg-colorFive">
+                    <a className="px-2 xl:px-3 xl:rounded-md py-2 md:ml-2 xl:ml-4 font-normal transition-all inline-block md:block bg-colorFive">
                       <img src="./assets/us.png" alt="us" />
                     </a>
                   </Link>
@@ -155,7 +155,7 @@ export default function Header() {
                 <li className="lg:pb-0 pb-3">
                   <Link href="/">
                     <a
-                      className="px-3 py-2 md:ml-4 font-bold text-colorThree transition-all rounded capitalize text-sm"
+                      className="px-2 xl:px-3 py-1 xl:py-2 md:ml-4 font-bold text-colorThree transition-all rounded capitalize text-sm"
                       style={{ backgroundColor: "rgba(36, 13, 133, 0.15)" }}
                     >
                       Book demo

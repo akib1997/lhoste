@@ -125,10 +125,10 @@ export default function diolouge() {
       <Head>
         <title>Dillouge | Lhots</title>
       </Head>
-      <section className="pt-12 lg:pt-32 relative">
+      <section className="pt-8 relative bg-white">
         <Container>
-          <div className="text-center relative z-20">
-            <h1 className="font-bold text-3xl md:text-4xl lg:w-2/3 mx-auto black-color">
+          <div className="text-center relative z-20 top-12">
+            <h1 className="font-bold text-2xl lg:text-[34px] leading-snug xl:w-3/5 mx-auto text-colorOne">
               Our source for topics relating to procurement, tactical spend and
               our view on the modern business world
             </h1>
@@ -148,23 +148,23 @@ export default function diolouge() {
                 {tags.map((tag, i) => (
                   <li key={i}>
                     <Link href="/">
-                      <a className="inline-block lg:px-5 px-3 lg:py-2 py-1 rounded-full tag-bg capitalize lg:mr-4 mr-2 font-bold text-indigo-900 text-sm lg:mb-0 mb-3">
+                      <a className="inline-block lg:px-6 px-3 lg:py-2 py-1 rounded-full capitalize lg:mr-4 mr-2 tag-bg font-bold text-colorFour text-sm lg:mb-0 mb-3">
                         {tag}
                       </a>
                     </Link>
                   </li>
                 ))}
               </ul>
-              <div className="w-full sm:w-60 flex bg-gray-200 rounded-lg mx-auto lg:mx-0">
+              <div className="w-full sm:w-60 flex bg-colorFive rounded-lg mx-auto lg:mx-0">
                 <input
                   type="text"
                   name="search"
                   id="search"
-                  className="w-full bg-transparent focus:outline-none p-3 placeholder-indigo-900"
+                  className="w-full bg-transparent focus:outline-none p-3 placeholder-colorTwo"
                   placeholder="Search..."
                 />
                 <button className="focus:outline-none">
-                  <FiSearch className="text-2xl text-indigo-900 mr-4"></FiSearch>
+                  <FiSearch className="text-2xl text-colorFour mr-4"></FiSearch>
                 </button>
               </div>
             </div>
@@ -181,12 +181,12 @@ export default function diolouge() {
       </section>
       <section className="py-20" style={{ backgroundColor: "#78DAB1" }}>
         <Container>
-          <div className="flex md:flex-nowrap flex-wrap items-center">
-            <h2 className="font-bold text-3xl lg:text-5xl leading-normal md:mb-0 mb-8 color-blue">
+          <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-6 items-center">
+            <h2 className="font-bold text-3xl xl:text-4xl leading-snug md:mb-0 mb-8 text-colorFour xl:col-span-2">
               You want all the insights and expertise directly to your inbox?
               Sign up here for our newsletter
             </h2>
-            <form className="md:max-w-md w-full md:ml-12">
+            <form>
               <input
                 type="email1"
                 name="email1"
@@ -203,7 +203,7 @@ export default function diolouge() {
                     value="yes"
                     className="opacity-0 absolute h-8 w-8 cursor-pointer"
                   />
-                  <div className="bg-transparent border-2 rounded-md border-white w-8 h-8 flex flex-shrink-0 justify-center items-center mr-3 focus-within:border-white">
+                  <div className="bg-transparent border-2 rounded-md border-white w-6 xl:w-8 h-6 xl:h-8 flex flex-shrink-0 justify-center items-center mr-3 focus-within:border-white">
                     <svg
                       className="fill-current hidden w-3 h-3 text-green-400 pointer-events-none"
                       version="1.1"
@@ -230,7 +230,7 @@ export default function diolouge() {
                 </div>
               </div>
               <button
-                className="bg-blue-900 text-white font-bold px-10 py-2 rounded mt-4 block w-full focus:outline-none"
+                className="bg-colorFour text-white text-base font-bold px-10 py-2 rounded-md mt-4 block w-full focus:outline-none"
                 onClick={(e) => e.preventDefault()}
               >
                 Subscribe

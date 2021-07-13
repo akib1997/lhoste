@@ -62,14 +62,14 @@ export default function product() {
       <Head>
         <title>Product | Lhots</title>
       </Head>
-      <section className="pt-12 lg:pt-20 relative">
+      <section className="pt-12 lg:pt-20 relative bg-white">
         <Container>
           <div className="grid lg:grid-cols-2">
             <div className="mt-16 lg:mt-24">
-              <h1 className="text-3xl lg:text-4xl font-bold mb-6">
+              <h1 className="text-3xl lg:text-4xl font-bold mb-6 leading-tight text-colorOne">
                 Enable your organization to source anything in the best way
               </h1>
-              <p className="lg:mb-12 leading-relaxed text-colorTwoy-500">
+              <p className="lg:mb-12 text-xl text-colorTwo">
                 Lhotse knows what and who is in your supplier base and makes
                 sure you foster relationships with the right suppliers
               </p>
@@ -78,14 +78,14 @@ export default function product() {
               <img
                 src="/assets/height-adjustable.svg"
                 alt="Enable your organization to source anything in the best way"
-                className="lg:max-w-sm w-full lg:ml-auto block relative -bottom-24 z-10"
+                className="lg:max-w-md w-full lg:ml-auto block relative -bottom-24 z-10"
               />
             </div>
           </div>
         </Container>
         <img
           src="/assets/product-banner.png"
-          className="w-full max-h-[30rem] z-[-1] absolute bottom-0 right-0"
+          className="w-full max-h-[30rem] z-0 absolute bottom-0 right-0"
           alt="Book Demo"
         />
       </section>
@@ -95,18 +95,18 @@ export default function product() {
         style={{ clipPath: "polygon(0 15%, 100% 0, 100% 100%, 0% 100%)" }}
       >
         <Container>
-          <div className="flex">
-            <div className="lg:w-1/3">
+          <div className="grid lg:grid-cols-2">
+            <div>
               <div className="flex items-center mb-4">
                 <span className="w-10 h-0.5 bg-white block mr-2"></span>
                 <p className="text-white tracking-[5px] font-bold uppercase">
                   First
                 </p>
               </div>
-              <h3 className="text-3xl lg:text-4xl text-colorOne font-bold mb-8">
+              <h3 className="text-3xl lg:text-4xl text-colorOne leading-snug font-bold mb-4">
                 Specify your needs in a guided, intuitive way
               </h3>
-              <p className="text-colorTwo">
+              <p className="text-colorTwo text-xl">
                 AI-enabled request definition and assessment at your fingertips,
                 from free text to tender
               </p>
@@ -117,77 +117,77 @@ export default function product() {
       <section className="-mb-60 pt-52 sm:pt-60 lg:pt-40 relative bg-white">
         <img
           src="./assets/specify-needs.svg"
-          alt="  Specify your needs in a guided, intuitive way"
+          alt="Specify your needs in a guided, intuitive way"
           className="absolute right-0 -top-44 lg:-top-72 z-10 max-w-[100%] sm:max-w-[70%] lg:max-w-[600px] xl:max-w-[700px]"
         />
         <Container>
-          <div className="flex items-center flex-wrap md:mt-20">
-            <div className="lg:w-1/2 xl:w-2/3 lg:order-1 order-2">
+          <div className="grid lg:grid-cols-5 lg:gap-10 gap-6 items-center md:mt-20">
+            <div className="lg:col-span-3 lg:order-1 order-2">
               <img
                 src="./assets/second.png"
                 alt="Get instant supplier recommendations"
-                className="w-full max-w-[600px] lg:mt-0 mt-12"
+                className="w-full"
               />
             </div>
-            <div className="lg:w-1/2 xl:w-1/3 lg:order-2 mb-10 md:mb-0 order-1">
+            <div className="lg:col-span-2 lg:order-2 order-1">
               <div className="flex items-center mb-4">
                 <span className="w-10 h-0.5 bg-[#78DAB1] block mr-2"></span>
                 <p className="text-[#78DAB1] tracking-[5px] font-bold uppercase">
                   second
                 </p>
               </div>
-              <h3 className="text-3xl lg:text-4xl text-colorOne font-bold mb-8">
+              <h3 className="text-3xl xl:text-4xl text-colorOne leading-snug font-bold mb-8">
                 Get instant supplier recommendations
               </h3>
-              <p className="text-colorTwo">
+              <p className="text-colorTwo text-xl">
                 Data-driven supplier recommendations without manual effort for
                 your teams
               </p>
             </div>
           </div>
-          <div className="flex items-center flex-wrap my-8 lg:my-20">
-            <div className="lg:w-1/2 xl:w-1/3 mb-10 lg:mb-0">
+          <div className="grid lg:grid-cols-5 lg:gap-10 gap-6 items-center my-8 lg:my-20">
+            <div className="lg:col-span-2">
               <div className="flex items-center mb-4">
                 <span className="w-10 h-0.5 bg-[#78DAB1] block mr-2"></span>
                 <p className="text-[#78DAB1] tracking-[5px] font-bold uppercase">
                   thired
                 </p>
               </div>
-              <h3 className="text-3xl lg:text-4xl text-colorOne font-bold mb-8">
+              <h3 className="text-3xl xl:text-4xl text-colorOne leading-snug font-bold mb-8">
                 Interact with suppliers
               </h3>
-              <p className="text-colorTwo">
+              <p className="text-colorTwo text-xl">
                 Central communication hub for your supplier engagement - no
                 matter who’s on holiday
               </p>
             </div>
-            <div className="lg:w-1/2 xl:w-2/3">
+            <div className="lg:col-span-3">
               <img
                 src="./assets/interect.svg"
                 alt="Get instant supplier recommendations"
-                className="w-full xl:w-2/3 ml-auto lg:mt-0 mt-12"
+                className="w-full ml-auto"
               />
             </div>
           </div>
-          <div className="flex items-center flex-wrap">
-            <div className="lg:w-1/2 xl:w-2/3 lg:order-1 order-2">
+          <div className="grid lg:grid-cols-5 lg:gap-10 gap-6 items-center">
+            <div className="lg:col-span-3 lg:order-1 order-2">
               <img
                 src="./assets/receive.svg"
                 alt="Receive and evaluate your options"
-                className="w-full xl:w-1/2 relative z-10 lg:mt-0 mt-12"
+                className="w-full xl:w-2/3 xl:ml-12 relative z-10"
               />
             </div>
-            <div className="lg:w-1/2 xl:w-1/3 lg:order-2 mb-10 lg:mb-0 order-1">
+            <div className="lg:col-span-2 order-1">
               <div className="flex items-center mb-4">
                 <span className="w-10 h-0.5 bg-[#78DAB1] block mr-2"></span>
                 <p className="text-[#78DAB1] tracking-[5px] font-bold uppercase">
                   fourth
                 </p>
               </div>
-              <h3 className="text-3xl lg:text-4xl text-colorOne font-bold mb-8">
+              <h3 className="text-3xl lg:text-4xl text-colorOne leading-snug font-bold mb-8">
                 Receive and evaluate your options
               </h3>
-              <p className="text-colorTwo">
+              <p className="text-colorTwo text-xl">
                 Powerful offer assessment and scenario analyses allow you to
                 make the decisions in a company-context
               </p>
@@ -209,10 +209,10 @@ export default function product() {
                   LHOTSE KNOWS
                 </p>
               </div>
-              <h3 className="text-3xl lg:text-4xl font-bold mb-4 ">
+              <h3 className="text-3xl lg:text-4xl leading-snug font-bold mb-4 ">
                 No one knows better what’s in your supplier base than Lhotse
               </h3>
-              <p className="font-normal">
+              <p className="text-xl">
                 Lhotse brings actionable analytics to make sure that you foster
                 relationships with the right suppliers - building preferred
                 supplier relationships and reducing the number of dormant
@@ -238,7 +238,7 @@ export default function product() {
               </p>
               <span className="w-10 h-0.5 bg-[#78DAB1] block mr-2"></span>
             </div>
-            <h2 className="text-3xl lg:text-4xl text-white font-bold mb-12">
+            <h2 className="text-3xl lg:text-4xl leading-snug text-white font-bold mb-12 xl:w-4/5 mx-auto">
               Lhotse integrates into your systems and meets your workflow
               requirements
             </h2>
@@ -307,21 +307,21 @@ export default function product() {
               </div>
             </div>
             <div className="mt-40">
-              <h2 className="font-bold text-3xl lg:text-4xl text-colorOne mb-16 text-center">
+              <h2 className="font-bold text-3xl lg:text-4xl text-colorOne leading-snug mb-16 text-center xl:w-4/5 mx-auto">
                 Lhotse works across the procurement maturity spectrum
               </h2>
               <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                 {maturitySpectrum &&
                   maturitySpectrum.map((data) => (
                     <div
-                      className="bg-white rounded-2xl shadow-lg p-6"
+                      className="bg-white rounded-2xl shadow-lg p-6 text-left"
                       key={data.id}
                     >
                       <span className="w-36 h-0.5 bg-[#78DAB1] block mb-3"></span>
                       <h5 className="font-bold text-colorOne text-2xl mb-6">
                         {data.title}
                       </h5>
-                      <p className="text-colorTwo">{data.content}</p>
+                      <p className="text-colorTwo text-lg">{data.content}</p>
                     </div>
                   ))}
               </div>
