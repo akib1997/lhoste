@@ -14,7 +14,7 @@ export default function Showcase() {
         <Container>
           <div className="lg:flex items-center">
             <div className="lg:w-1/2">
-              <h2 className="text-3xl md:text-4xl black-color font-bold leading-tight mb-8 2xl:w-2/3">
+              <h2 className="text-2xl lg:text-2xl lg:text-4xl black-color font-bold leading-tight mb-8 2xl:w-2/3">
                 Manage & automate purchase requisitions
               </h2>
               <div className="flex mb-4">
@@ -23,7 +23,7 @@ export default function Showcase() {
                   className="mr-2 self-start mt-1"
                   alt="triengle"
                 />
-                <span className="text-colorTwo text-xl">
+                <span className="text-colorTwo text-base md:text-xl">
                   Define requirements jointly and in a guided way in one central
                   place
                 </span>
@@ -67,7 +67,7 @@ export default function Showcase() {
               </div>
             </div>
             <div className="lg:w-1/2 lg:order-2 order-1">
-              <h2 className="text-3xl md:text-4xl black-color leading-tight font-bold mb-8">
+              <h2 className="text-2xl lg:text-2xl lg:text-4xl black-color leading-tight font-bold mb-8">
                 Identify and assess all relevant suppliers
               </h2>
               <ul>
@@ -77,7 +77,7 @@ export default function Showcase() {
                     className="mr-2 self-start mt-1"
                     alt="triengle"
                   />
-                  <span className="text-colorTwo text-xl">
+                  <span className="text-colorTwo text-base md:text-xl">
                     Identify the right existing and new suppliers
                   </span>
                 </li>
@@ -87,7 +87,7 @@ export default function Showcase() {
                     className="mr-2 self-start mt-1"
                     alt="triengle"
                   />
-                  <span className="text-colorTwo text-xl">
+                  <span className="text-colorTwo text-base md:text-xl">
                     Analyze supplier capability, performance, and compliance to
                     drive partnerships
                   </span>
@@ -107,7 +107,7 @@ export default function Showcase() {
         <Container>
           <div className="lg:flex items-center relative z-20">
             <div className="lg:w-1/2">
-              <h2 className="text-3xl md:text-4xl black-color font-bold leading-tight mb-8 2xl:w-3/4">
+              <h2 className="text-2xl lg:text-2xl lg:text-4xl black-color font-bold leading-tight mb-8 2xl:w-3/4">
                 Bring all available data into your processes
               </h2>
               <ul>
@@ -117,7 +117,7 @@ export default function Showcase() {
                     className="mr-2 self-start mt-1"
                     alt="triengle"
                   />
-                  <span className="text-colorTwo text-xl">
+                  <span className="text-colorTwo text-base md:text-xl">
                     Integrate existing information from your ERP & eProcurement
                     systems
                   </span>
@@ -128,7 +128,7 @@ export default function Showcase() {
                     className="mr-2 self-start mt-1"
                     alt="triengle"
                   />
-                  <span className="text-colorTwo text-xl">
+                  <span className="text-colorTwo text-base md:text-xl">
                     Insights and recommendations are implemented into processes
                   </span>
                 </li>

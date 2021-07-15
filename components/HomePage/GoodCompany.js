@@ -16,7 +16,7 @@ export default function GoodCompany() {
       />
       <Container>
         <div className="md:w-3/4 mx-auto md:mt-20 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold black-color mb-12">
+          <h2 className="text-2xl lg:text-2xl lg:text-4xl font-bold black-color mb-12">
             Lhotse, at 8,516 meters, is the fourth highest mountain on planet
             Earth.
           </h2>

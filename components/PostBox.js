@@ -32,7 +32,7 @@ export default function PostBox({ posts }) {
                   <h3 className="text-2xl font-bold py-2 text-colorOne">
                     {post.title}
                   </h3>
-                  <p className="pb-6 text-xl text-colorTwo">{post.text}</p>
+                  <p className="pb-6 text-base md:text-xl text-colorTwo">{post.text}</p>
                   <ul className="flex pb-6 flex-wrap">
                     {post.tags &&
                       post.tags.map((tag, i) => (

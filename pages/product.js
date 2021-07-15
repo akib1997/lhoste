@@ -62,14 +62,14 @@ export default function product() {
       <Head>
         <title>Product | Lhots</title>
       </Head>
-      <section className="pt-12 lg:pt-20 relative bg-white">
+      <section className="pt-16 lg:pt-20 relative bg-white">
         <Container>
           <div className="grid lg:grid-cols-2">
-            <div className="mt-16 lg:mt-24">
-              <h1 className="text-3xl lg:text-4xl font-bold mb-6 leading-tight text-colorOne">
+            <div className="sm:mt-16 lg:mt-24 lg:text-left text-center">
+              <h1 className="text-2xl lg:text-2xl lg:text-4xl font-bold mb-6 leading-tight text-colorOne">
                 Enable your organization to source anything in the best way
               </h1>
-              <p className="lg:mb-12 text-xl text-colorTwo">
+              <p className="lg:mb-12 text-base md:text-xl text-colorTwo">
                 Lhotse knows what and who is in your supplier base and makes
                 sure you foster relationships with the right suppliers
               </p>
@@ -103,10 +103,10 @@ export default function product() {
                   First
                 </p>
               </div>
-              <h3 className="text-3xl lg:text-4xl text-colorOne leading-snug font-bold mb-4">
+              <h3 className="text-2xl lg:text-2xl lg:text-4xl text-colorOne leading-snug font-bold mb-4">
                 Specify your needs in a guided, intuitive way
               </h3>
-              <p className="text-colorTwo text-xl">
+              <p className="text-colorTwo text-base md:text-xl">
                 AI-enabled request definition and assessment at your fingertips,
                 from free text to tender
               </p>
@@ -136,10 +136,10 @@ export default function product() {
                   second
                 </p>
               </div>
-              <h3 className="text-3xl xl:text-4xl text-colorOne leading-snug font-bold mb-8">
+              <h3 className="text-2xl lg:text-4xl text-colorOne leading-snug font-bold mb-8">
                 Get instant supplier recommendations
               </h3>
-              <p className="text-colorTwo text-xl">
+              <p className="text-colorTwo text-base md:text-xl">
                 Data-driven supplier recommendations without manual effort for
                 your teams
               </p>
@@ -153,10 +153,10 @@ export default function product() {
                   thired
                 </p>
               </div>
-              <h3 className="text-3xl xl:text-4xl text-colorOne leading-snug font-bold mb-8">
+              <h3 className="text-2xl lg:text-4xl text-colorOne leading-snug font-bold mb-8">
                 Interact with suppliers
               </h3>
-              <p className="text-colorTwo text-xl">
+              <p className="text-colorTwo text-base md:text-xl">
                 Central communication hub for your supplier engagement - no
                 matter who’s on holiday
               </p>
@@ -184,10 +184,10 @@ export default function product() {
                   fourth
                 </p>
               </div>
-              <h3 className="text-3xl lg:text-4xl text-colorOne leading-snug font-bold mb-8">
+              <h3 className="text-2xl lg:text-4xl text-colorOne leading-snug font-bold mb-8">
                 Receive and evaluate your options
               </h3>
-              <p className="text-colorTwo text-xl">
+              <p className="text-colorTwo text-base md:text-xl">
                 Powerful offer assessment and scenario analyses allow you to
                 make the decisions in a company-context
               </p>
@@ -209,10 +209,10 @@ export default function product() {
                   LHOTSE KNOWS
                 </p>
               </div>
-              <h3 className="text-3xl lg:text-4xl leading-snug font-bold mb-4 ">
+              <h3 className="text-2xl lg:text-2xl lg:text-4xl leading-snug font-bold mb-4 ">
                 No one knows better what’s in your supplier base than Lhotse
               </h3>
-              <p className="text-xl">
+              <p className="text-base md:text-xl">
                 Lhotse brings actionable analytics to make sure that you foster
                 relationships with the right suppliers - building preferred
                 supplier relationships and reducing the number of dormant
@@ -238,15 +238,15 @@ export default function product() {
               </p>
               <span className="w-10 h-0.5 bg-[#78DAB1] block mr-2"></span>
             </div>
-            <h2 className="text-3xl lg:text-4xl leading-snug text-white font-bold mb-12 xl:w-4/5 mx-auto">
+            <h2 className="text-2xl lg:text-2xl lg:text-4xl leading-snug text-white font-bold mb-12 xl:w-4/5 mx-auto">
               Lhotse integrates into your systems and meets your workflow
               requirements
             </h2>
-            <div className="bg-white shadow-2xl rounded-2xl px-8">
+            <div className="bg-white shadow-2xl rounded-2xl px-4 md:px-8">
               <div className="flex flex-wrap">
                 <div className="w-full sm:w-1/2 lg:w-1/3 my-12 sm:border-r border-gray-100">
                   <div
-                    className="w-40 h-40 mx-auto flex items-center justify-center rounded-full shadow-xl"
+                    className="w-40 h-40 mx-auto flex items-center justify-center rounded-full extra-shadow"
                     style={{ backgroundColor: "rgba(36, 13, 133, 0.15)" }}
                   >
                     <img
@@ -255,7 +255,7 @@ export default function product() {
                       alt="Systems integration"
                     />
                   </div>
-                  <h6 className="font-bold my-8 md:my-12 text-black">
+                  <h6 className="font-bold my-8 text-lg md:text-2xl md:my-12 text-black">
                     Systems integration
                   </h6>
                   <img
@@ -266,7 +266,7 @@ export default function product() {
                 </div>
                 <div className="w-full sm:w-1/2 lg:w-1/3 my-12 lg:border-r border-gray-100">
                   <div
-                    className="w-40 h-40 mx-auto flex items-center justify-center rounded-full shadow-xl"
+                    className="w-40 h-40 mx-auto flex items-center justify-center rounded-full extra-shadow"
                     style={{ backgroundColor: "rgba(36, 13, 133, 0.15)" }}
                   >
                     <img
@@ -275,18 +275,18 @@ export default function product() {
                       alt="Single sign on"
                     />
                   </div>
-                  <h6 className="font-bold my-8 md:my-12 text-black">
+                  <h6 className="font-bold my-8 text-lg md:text-2xl md:my-12 text-black">
                     Single sign on
                   </h6>
                   <img
-                    src="/assets/single-sign-on.svg"
+                    src="/assets/frame-139@2x.svg"
                     className="block w-36 mx-auto"
                     alt="Single sign on"
                   />
                 </div>
                 <div className="w-full sm:w-1/2 lg:w-1/3 my-12 mx-auto">
                   <div
-                    className="w-40 h-40 mx-auto flex items-center justify-center rounded-full shadow-xl"
+                    className="w-40 h-40 mx-auto flex items-center justify-center rounded-full extra-shadow"
                     style={{ backgroundColor: "rgba(36, 13, 133, 0.15)" }}
                   >
                     <img
@@ -295,7 +295,7 @@ export default function product() {
                       alt="Workflow integration"
                     />
                   </div>
-                  <h6 className="font-bold my-8 md:my-12 text-black">
+                  <h6 className="font-bold my-8 text-lg md:text-2xl md:my-12 text-black">
                     Workflow integration
                   </h6>
                   <img
@@ -307,7 +307,7 @@ export default function product() {
               </div>
             </div>
             <div className="mt-40">
-              <h2 className="font-bold text-3xl lg:text-4xl text-colorOne leading-snug mb-16 text-center xl:w-4/5 mx-auto">
+              <h2 className="font-bold text-2xl lg:text-2xl lg:text-4xl text-colorOne leading-snug mb-16 text-center xl:w-4/5 mx-auto">
                 Lhotse works across the procurement maturity spectrum
               </h2>
               <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
@@ -332,7 +332,7 @@ export default function product() {
       <section className="bg-white text-center relative pt-20 pb-8">
         <Container>
           <div className=" relative -mt-72">
-            <h2 className="text-colorOne text-3xl lg:text-4xl font-bold mb-20">
+            <h2 className="text-colorOne text-2xl lg:text-2xl lg:text-4xl font-bold mb-20">
               Benefits
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4">

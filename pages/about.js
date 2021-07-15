@@ -63,11 +63,11 @@ export default function about() {
       <section className="mt-10 xl:mt-32 relative bg-white pb-32 xl:pb-60 pt-20">
         <Container>
           <div className="z-20 relative lg:w-2/3">
-            <h1 className="text-3xl lg:text-4xl font-bold mb-6 text-colorOne leading-tight">
+            <h1 className="text-2xl lg:text-2xl lg:text-4xl font-bold mb-6 text-colorOne leading-tight">
               With 8,516 meters, Lhotse is one of the highest mountains on
               earth.{" "}
             </h1>
-            <p className="mb-12 leading-relaxed text-colorTwo text-xl">
+            <p className="mb-12 leading-relaxed text-colorTwo text-base md:text-xl">
               The reason why you probably do not know it: It stands right next
               to Mount Everest. Attention is focused on the highest mountain on
               earth - only its smaller neighbor Lhotse remains unnoticed. It's a
@@ -99,7 +99,7 @@ export default function about() {
                   Mission
                 </p>
               </div>
-              <h2 className="text-3xl xl:text-4xl leading-snug font-bold text-colorOne">
+              <h2 className="text-3xl xl:text-2xl lg:text-4xl leading-snug font-bold text-colorOne">
                 Our mission is to optimize the tactical spend in companies.
               </h2>
             </div>
@@ -112,7 +112,7 @@ export default function about() {
                   Vision
                 </p>
               </div>
-              <h2 className="text-3xl xl:text-4xl leading-snug font-bold text-colorOne">
+              <h2 className="text-3xl xl:text-2xl lg:text-4xl leading-snug font-bold text-colorOne">
                 Our vision is to optimize the tactical spend in companies.
               </h2>
             </div>
@@ -133,11 +133,11 @@ export default function about() {
           <Container>
             <div className="lg:flex items-center justify-between">
               <div className="lg:w-2/5">
-                <h2 className="text-3xl lg:text-4xl leading-snug text-colorOne font-bold mb-4">
+                <h2 className="text-2xl lg:text-2xl lg:text-4xl leading-snug text-colorOne font-bold mb-4">
                   We believe in empowering teams to bring the best of themselves
                   to the table.
                 </h2>
-                <p className="text-xl text-colorTwo">
+                <p className="text-base md:text-xl text-colorTwo">
                   This guides our behavior and all our efforts - both in the way
                   our software is developed: to empower organizations and
                   procurement teams. As well as in how our organization operates
@@ -182,10 +182,10 @@ export default function about() {
                 </div>
               </div>
               <div className="lg:w-2/5 lg:order-2 order-1">
-                <h2 className="text-3xl lg:text-4xl leading-snug text-colorOne font-bold mb-6">
+                <h2 className="text-2xl lg:text-2xl lg:text-4xl leading-snug text-colorOne font-bold mb-6">
                   At Lhotse, 1+1 is much larger than 2
                 </h2>
-                <p className="text-xl text-colorTwo">
+                <p className="text-base md:text-xl text-colorTwo">
                   Successes and achievements are celebrated as team efforts,
                   recognizing every individual contribution.{" "}
                 </p>
@@ -208,10 +208,10 @@ export default function about() {
           <Container>
             <div className="lg:flex items-center justify-between">
               <div className="lg:w-2/5">
-                <h2 className="text-3xl lg:text-4xl leading-snug  text-colorOne font-bold mb-4">
+                <h2 className="text-2xl lg:text-2xl lg:text-4xl leading-snug  text-colorOne font-bold mb-4">
                   We believe in setting the bar high for ourselves
                 </h2>
-                <p className="text-xl text-colorTwo">
+                <p className="text-base md:text-xl text-colorTwo">
                   To trust in our teams and treat each other with honesty and
                   generosity - because we only have one asset - Our team. and
                   what brings us together.
@@ -244,7 +244,7 @@ export default function about() {
               className="absolute w-full h-full left-0 top-0 z-10 right-0 bottom-0"
             />
             <div className="xl:w-3/4 mx-auto relative z-20">
-              <h4 className="font-bold text-black text-xl lg:text-3xl text-center !leading-normal bg-colorFive">
+              <h4 className="font-bold text-black text-base md:text-xl lg:text-3xl text-center !leading-normal bg-colorFive">
                 At Lhotse, we are disrupting a previously dormant software
                 segment - we are challengers, we won’t accept the status quo,
                 and we believe that any change always needs to starts with what

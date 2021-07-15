@@ -172,7 +172,7 @@ export default function diolouge() {
         </div>
         <Container>
           <div className="py-20">
-            <h2 className="text-4xl font-bold black-color mb-12">
+            <h2 className="text-2xl lg:text-4xl font-bold black-color mb-12">
               Latest posts
             </h2>
             <PostBox posts={posts} />
@@ -182,7 +182,7 @@ export default function diolouge() {
       <section className="py-20" style={{ backgroundColor: "#78DAB1" }}>
         <Container>
           <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-6 items-center">
-            <h2 className="font-bold text-3xl xl:text-4xl leading-snug md:mb-0 mb-8 text-colorFour xl:col-span-2">
+            <h2 className="font-bold text-3xl xl:text-2xl lg:text-4xl leading-snug md:mb-0 mb-8 text-colorFour xl:col-span-2">
               You want all the insights and expertise directly to your inbox?
               Sign up here for our newsletter
             </h2>
@@ -242,7 +242,7 @@ export default function diolouge() {
 
       <section className="py-20 main-bg pb-80 -mb-72">
         <Container>
-          <h2 className="text-4xl font-bold mb-12 black-color">All posts</h2>
+          <h2 className="text-2xl lg:text-4xl font-bold mb-12 black-color">All posts</h2>
           <PostBox posts={allPosts} />
         </Container>
       </section>

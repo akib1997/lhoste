@@ -28,7 +28,7 @@ export default function Footer() {
     <footer className="text-white bg-colorOne mt-72">
       <Container>
         <div className="text-center relative -top-40 lg:-top-52">
-          <h2 className="text-3xl lg:text-4xl font-bold text-black mb-12">
+          <h2 className="text-2xl lg:text-2xl lg:text-4xl font-bold text-black mb-12">
             You’re in good company
           </h2>
           <div className="grid lg:grid-cols-2 gap-10">
@@ -47,7 +47,7 @@ export default function Footer() {
                     <p>{data.text}</p>
                     <div className="flex justify-between items-center mt-6">
                       <div>
-                        <h6 className="text-xl font-bold black-color">
+                        <h6 className="text-base md:text-xl font-bold black-color">
                           {data.title}
                         </h6>
                         <span className="text-sm"> {data.position} </span>
@@ -68,7 +68,7 @@ export default function Footer() {
             <span className="text-white">Experience Lhotse. </span>
             <span className="text-colorTwo">Book a demo.</span>
           </h2>
-          <p className="text-xl lg:w-2/3 text-colorTwo mb-10">
+          <p className="text-base md:text-xl lg:w-2/3 text-colorTwo mb-10">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod.Lorem ipsum dolor sit amet, consetetur.
           </p>

@@ -32,7 +32,7 @@ export default function ValuePropositions() {
     <>
       <div className="lg:pb-32 pb-16 relative bg-colorFive z-10 pt-80 xl:pt-96 -mt-32">
         <Container>
-          <h2 className="text-4xl font-bold text-center black-color mb-8">
+          <h2 className="text-2xl lg:text-4xl font-bold text-center black-color mb-8">
             Value Proposition
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 my-8 lg:my-20">
