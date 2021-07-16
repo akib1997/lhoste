@@ -11,7 +11,7 @@ export default function ValuePropositions() {
     },
     {
       id: 2,
-      img: "control-expenditures.svg",
+      img: "expenditures.svg",
       head: "Control expenditures",
       text: `Lhotse gets the right offers from the best suppliers for optimal conditions  `,
     },
@@ -25,7 +25,8 @@ export default function ValuePropositions() {
       id: 4,
       img: "enable-stakeholders.svg",
       head: "Enable stakeholders",
-      text: "Lhotse integrates in workflows and is proactive like James at the Ritz",
+      text:
+        "Lhotse integrates in workflows and is proactive like James at the Ritz",
     },
   ];
   return (
@@ -51,7 +52,6 @@ export default function ValuePropositions() {
                   </div>
                   <div className="p-6">
                     <h6 className="text-2xl font-bold black-color mb-2 mt-4">
-                      {" "}
                       {item.head}{" "}
                     </h6>
                     <p className="text-colorTwoy-400"> {item.text} </p>

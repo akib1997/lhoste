@@ -13,21 +13,24 @@ export default function about() {
       img: "https://avatars.githubusercontent.com/u/7131243?v=4",
       title: "Henning Hatje",
       position: "Co-Founder | Clients & Partnerships",
-      text: "some facts from CV (e.g. BCG) and experience, e.g. 4+ years procurement, cost-cutting, compliance and large scale re-org experience",
+      text:
+        "some facts from CV (e.g. BCG) and experience, e.g. 4+ years procurement, cost-cutting, compliance and large scale re-org experience",
     },
     {
       id: 2,
       img: "https://avatars.githubusercontent.com/u/7131243?v=4",
       title: "Jan Berssenbrügge",
       position: "Co-Founder | Supplier & Operations",
-      text: "some facts from CV (e.g. Clark) and experience, e.g. High-paced business development and partner integration know-how",
+      text:
+        "some facts from CV (e.g. Clark) and experience, e.g. High-paced business development and partner integration know-how",
     },
     {
       id: 3,
       img: "https://avatars.githubusercontent.com/u/7131243?v=4",
       title: "JCan Akin",
       position: "Co-Founder | Product & Tech",
-      text: "some facts from CV (e.g. Cargonexx) and experience, e.g. Product and tech expert with know-how in scaling teams and architectures",
+      text:
+        "some facts from CV (e.g. Cargonexx) and experience, e.g. Product and tech expert with know-how in scaling teams and architectures",
     },
   ];
 
@@ -57,13 +60,13 @@ export default function about() {
   return (
     <>
       <Head>
-        <title>About | Lhots</title>
+        <title>About | Lhotse</title>
       </Head>
 
       <section className="mt-10 xl:mt-32 relative bg-white pb-32 xl:pb-60 pt-20">
         <Container>
           <div className="z-20 relative lg:w-2/3">
-            <h1 className="text-2xl lg:text-2xl lg:text-4xl font-bold mb-6 text-colorOne leading-tight">
+            <h1 className="text-2xl  lg:text-4xl font-bold mb-6 text-colorOne leading-tight">
               With 8,516 meters, Lhotse is one of the highest mountains on
               earth.{" "}
             </h1>
@@ -94,7 +97,7 @@ export default function about() {
             <div className="xl:pr-12">
               <img src="/assets/mission.svg" className="w-40" alt="Mission" />
               <div className="flex items-center my-6">
-                <div className="w-10 h-0.5 mr-2 bg-green-400"></div>
+                <div className="w-10 h-0.5 mr-2 bg-green-400" />
                 <p className="text-green-400 uppercase font-bold tracking-widest">
                   Mission
                 </p>
@@ -107,7 +110,7 @@ export default function about() {
             <div className="xl:pr-12">
               <img src="/assets/vision.svg" className="w-40" alt="Vision" />
               <div className="flex items-center my-6">
-                <div className="w-10 h-0.5 mr-2 bg-green-400"></div>
+                <div className="w-10 h-0.5 mr-2 bg-green-400" />
                 <p className="text-green-400 uppercase font-bold tracking-widest">
                   Vision
                 </p>
@@ -133,7 +136,7 @@ export default function about() {
           <Container>
             <div className="lg:flex items-center justify-between">
               <div className="lg:w-2/5">
-                <h2 className="text-2xl lg:text-2xl lg:text-4xl leading-snug text-colorOne font-bold mb-4">
+                <h2 className="text-2xl  lg:text-4xl leading-snug text-colorOne font-bold mb-4">
                   We believe in empowering teams to bring the best of themselves
                   to the table.
                 </h2>
@@ -182,7 +185,7 @@ export default function about() {
                 </div>
               </div>
               <div className="lg:w-2/5 lg:order-2 order-1">
-                <h2 className="text-2xl lg:text-2xl lg:text-4xl leading-snug text-colorOne font-bold mb-6">
+                <h2 className="text-2xl  lg:text-4xl leading-snug text-colorOne font-bold mb-6">
                   At Lhotse, 1+1 is much larger than 2
                 </h2>
                 <p className="text-base md:text-xl text-colorTwo">
@@ -190,7 +193,7 @@ export default function about() {
                   recognizing every individual contribution.{" "}
                 </p>
                 <Link href="/">
-                  <a className="bg-colorThree text-base text-white inline-block font-bold px-12 lg:px-16 py-3 lg:py-4 rounded mb-12">
+                  <a className="bg-colorThree text-base text-white inline-block font-bold px-12 lg:px-16 py-3 lg:py-4 rounded mt-12">
                     Check open positions
                   </a>
                 </Link>
@@ -208,7 +211,7 @@ export default function about() {
           <Container>
             <div className="lg:flex items-center justify-between">
               <div className="lg:w-2/5">
-                <h2 className="text-2xl lg:text-2xl lg:text-4xl leading-snug  text-colorOne font-bold mb-4">
+                <h2 className="text-2xl  lg:text-4xl leading-snug  text-colorOne font-bold mb-4">
                   We believe in setting the bar high for ourselves
                 </h2>
                 <p className="text-base md:text-xl text-colorTwo">
@@ -260,11 +263,11 @@ export default function about() {
             Meet the Team
           </h3>
           <div className="text-center flex items-center justify-center">
-            <span className="w-10 h-0.5 bg-colorThree inline-block"></span>
+            <span className="w-10 h-0.5 bg-colorThree inline-block" />
             <p className="uppercase tracking-widest font-bold text-colorOne text-[20px] mx-4">
               leadership
             </p>
-            <span className="w-10 h-0.5 bg-colorThree inline-block"></span>
+            <span className="w-10 h-0.5 bg-colorThree inline-block" />
           </div>
 
           <TeamMember teamData={teamData} />
@@ -273,11 +276,11 @@ export default function about() {
       <section className="pb-20 -mt-40">
         <Container>
           <div className="text-center flex items-center justify-center mb-12">
-            <span className="w-10 h-0.5 bg-colorThree inline-block"></span>
+            <span className="w-10 h-0.5 bg-colorThree inline-block" />
             <p className="uppercase tracking-widest font-bold text-colorThree text-[20px] mx-4">
               OPEN Positions
             </p>
-            <span className="w-10 h-0.5 bg-colorThree inline-block"></span>
+            <span className="w-10 h-0.5 bg-colorThree inline-block" />
           </div>
           <OpenPositions positions={positions} />
           <div className="text-center ">

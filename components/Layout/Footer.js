@@ -9,7 +9,8 @@ export default function Footer() {
     {
       id: 1,
       title: "Christopher Oster",
-      text: "This is a great Customer Quote. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.Lorem ipsum dolor sit amet, consetetur.",
+      text:
+        "This is a great Customer Quote. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.Lorem ipsum dolor sit amet, consetetur.",
       img: `https://images.unsplash.com/photo-1568316674077-d72ee56de61c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60`,
       position: "CEO of a great Company",
       icon: "homotogo.svg",
@@ -17,7 +18,8 @@ export default function Footer() {
     {
       id: 2,
       title: "Philip Liebenow",
-      text: "This is a great Customer Quote. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.Lorem ipsum dolor sit amet, consetetur.",
+      text:
+        "This is a great Customer Quote. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.Lorem ipsum dolor sit amet, consetetur.",
       img: `https://images.unsplash.com/photo-1560250097-0b93528c311a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60`,
       position: "CEO of a great Company",
       icon: "clark.svg",
@@ -28,7 +30,7 @@ export default function Footer() {
     <footer className="text-white bg-colorOne mt-72">
       <Container>
         <div className="text-center relative -top-40 lg:-top-52">
-          <h2 className="text-2xl lg:text-2xl lg:text-4xl font-bold text-black mb-12">
+          <h2 className="text-2xl lg:text-4xl font-bold text-black mb-12">
             You’re in good company
           </h2>
           <div className="grid lg:grid-cols-2 gap-10">

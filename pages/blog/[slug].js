@@ -40,8 +40,8 @@ export default function Details() {
                   />
                   <h6 className="font-normal text-colorTwoy-500">{`Hello World`}</h6>
                 </div>
-                <div className="w-36 h-0.5 bg-green-400 my-8"></div>
-                <h3 className="text-2xl lg:text-4xl font-bold py-2 text-indigo-900">
+                <div className="w-36 h-0.5 bg-green-400 my-8" />
+                <h3 className=" lg:text-4xl font-bold py-2 text-indigo-900 pr-4">
                   No dedicated indirect procurement unit / systems in use
                 </h3>
               </div>

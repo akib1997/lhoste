@@ -32,11 +32,11 @@ body {
 .react-tabs__tab-panel {
   transition: all 0.7s;
   position: relative;
-  top: -2rem;
+  left: -2rem;
   opacity: 0;
 }
 .react-tabs__tab-panel--selected {
-  top: 0;
+  left: 0;
   opacity: 1;
 }
 

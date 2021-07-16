@@ -1,11 +1,8 @@
-import Image from "next/image";
-import Container from "../Layout/Container";
 import dynamic from "next/dynamic";
-const Tabs = dynamic(
-  import("react-tabs").then((mod) => mod.Tabs),
-  { ssr: false }
-); // disable ssr
 import { Tab, TabList, TabPanel } from "react-tabs";
+const Tabs = dynamic(import("react-tabs").then((mod) => mod.Tabs), {
+  ssr: false,
+}); // disable ssr
 
 export default function AllTab() {
   const buttons = [
@@ -20,26 +17,30 @@ export default function AllTab() {
       id: 1,
       img: "test.png",
       title: "Requests are handled front-to- end without manual steps",
-      text: "Execute purchasing requests front-to-end, based on the proprietary Lhotse multi-algorithm request assessment and automation engine. You are getting the best available sourcing options.",
+      text:
+        "Execute purchasing requests front-to-end, based on the proprietary Lhotse multi-algorithm request assessment and automation engine. You are getting the best available sourcing options.",
     },
     {
       id: 2,
       img: "tab2.svg",
       title: "Loved by users in procurement and throughout your organization",
-      text: "EGive your business units and requestors the most intuitive experience at hand - Lhotse is the first procurement solution that is loved by its users. No wonder, it is built with them in mind",
+      text:
+        "EGive your business units and requestors the most intuitive experience at hand - Lhotse is the first procurement solution that is loved by its users. No wonder, it is built with them in mind",
     },
     {
       id: 3,
       img: "tab3.svg",
       title:
         "Eliminate fragmentation and unnecessary redundancies in your supplier base",
-      text: "Lhotse identifies and reduces redundancies in your B- and C-parts supplier base - for you to build preferred supplier panels and drive standardization",
+      text:
+        "Lhotse identifies and reduces redundancies in your B- and C-parts supplier base - for you to build preferred supplier panels and drive standardization",
     },
     {
       id: 4,
       img: "tab4.svg",
       title: "Interacts with your existing ERP & eProcurement infrastructure",
-      text: "Lhotse acts as a layer of intelligence that sits on your ERP, SRM and e Procurement infrastructure - making sure that all data stays in sync at all times",
+      text:
+        "Lhotse acts as a layer of intelligence that sits on your ERP, SRM and e Procurement infrastructure - making sure that all data stays in sync at all times",
     },
   ];
   return (
@@ -57,8 +58,12 @@ export default function AllTab() {
                   />
                 </div>
                 <div className="lg:pr-12">
-                  <h3 className="text-2xl lg:text-3xl text-black font-bold mb-4">{data.title}</h3>
-                  <p className="text-base lg:text-lg text-colorTwo">{data.text}</p>
+                  <h3 className="text-2xl lg:text-3xl text-black font-bold mb-4">
+                    {data.title}
+                  </h3>
+                  <p className="text-base lg:text-lg text-colorTwo">
+                    {data.text}
+                  </p>
                 </div>
               </div>
             </TabPanel>

@@ -40,7 +40,7 @@ export default function product() {
     },
     {
       id: 2,
-      img: "control-expenditures.svg",
+      img: "expenditures.svg",
       head: "Control expenditures",
       text: `Lhotse gets the right offers from the best suppliers for optimal conditions  `,
     },
@@ -54,19 +54,20 @@ export default function product() {
       id: 4,
       img: "enable-stakeholders.svg",
       head: "Enable stakeholders",
-      text: "Lhotse integrates in workflows and is proactive like James at the Ritz",
+      text:
+        "Lhotse integrates in workflows and is proactive like James at the Ritz",
     },
   ];
   return (
     <>
       <Head>
-        <title>Product | Lhots</title>
+        <title>Product | Lhotse</title>
       </Head>
       <section className="pt-16 lg:pt-20 relative bg-white">
         <Container>
           <div className="grid lg:grid-cols-2">
             <div className="sm:mt-16 lg:mt-24 lg:text-left text-center">
-              <h1 className="text-2xl lg:text-2xl lg:text-4xl font-bold mb-6 leading-tight text-colorOne">
+              <h1 className="text-2xl  lg:text-4xl font-bold mb-6 leading-tight text-colorOne">
                 Enable your organization to source anything in the best way
               </h1>
               <p className="lg:mb-12 text-base md:text-xl text-colorTwo">
@@ -98,12 +99,12 @@ export default function product() {
           <div className="grid lg:grid-cols-2">
             <div>
               <div className="flex items-center mb-4">
-                <span className="w-10 h-0.5 bg-white block mr-2"></span>
+                <span className="w-10 h-0.5 bg-white block mr-2" />
                 <p className="text-white tracking-[5px] font-bold uppercase">
                   First
                 </p>
               </div>
-              <h3 className="text-2xl lg:text-2xl lg:text-4xl text-colorOne leading-snug font-bold mb-4">
+              <h3 className="text-2xl  lg:text-4xl text-colorOne leading-snug font-bold mb-4">
                 Specify your needs in a guided, intuitive way
               </h3>
               <p className="text-colorTwo text-base md:text-xl">
@@ -131,7 +132,7 @@ export default function product() {
             </div>
             <div className="lg:col-span-2 lg:order-2 order-1">
               <div className="flex items-center mb-4">
-                <span className="w-10 h-0.5 bg-[#78DAB1] block mr-2"></span>
+                <span className="w-10 h-0.5 bg-[#78DAB1] block mr-2" />
                 <p className="text-[#78DAB1] tracking-[5px] font-bold uppercase">
                   second
                 </p>
@@ -148,7 +149,7 @@ export default function product() {
           <div className="grid lg:grid-cols-5 lg:gap-10 gap-6 items-center my-8 lg:my-20">
             <div className="lg:col-span-2">
               <div className="flex items-center mb-4">
-                <span className="w-10 h-0.5 bg-[#78DAB1] block mr-2"></span>
+                <span className="w-10 h-0.5 bg-[#78DAB1] block mr-2" />
                 <p className="text-[#78DAB1] tracking-[5px] font-bold uppercase">
                   thired
                 </p>
@@ -179,7 +180,7 @@ export default function product() {
             </div>
             <div className="lg:col-span-2 order-1">
               <div className="flex items-center mb-4">
-                <span className="w-10 h-0.5 bg-[#78DAB1] block mr-2"></span>
+                <span className="w-10 h-0.5 bg-[#78DAB1] block mr-2" />
                 <p className="text-[#78DAB1] tracking-[5px] font-bold uppercase">
                   fourth
                 </p>
@@ -204,12 +205,12 @@ export default function product() {
           <div className="flex">
             <div className="lg:w-1/2">
               <div className="flex items-center mb-4">
-                <span className="w-10 h-0.5 bg-[#78DAB1] block mr-2"></span>
+                <span className="w-10 h-0.5 bg-[#78DAB1] block mr-2" />
                 <p className="text-[#78DAB1] tracking-[5px] font-bold uppercase">
                   LHOTSE KNOWS
                 </p>
               </div>
-              <h3 className="text-2xl lg:text-2xl lg:text-4xl leading-snug font-bold mb-4 ">
+              <h3 className="text-2xl  lg:text-4xl leading-snug font-bold mb-4 ">
                 No one knows better what’s in your supplier base than Lhotse
               </h3>
               <p className="text-base md:text-xl">
@@ -232,13 +233,13 @@ export default function product() {
         <Container>
           <div className="-top-80 relative text-center">
             <div className="inline-flex items-center mb-4">
-              <span className="w-10 h-0.5 bg-[#78DAB1] block mr-2"></span>
+              <span className="w-10 h-0.5 bg-[#78DAB1] block mr-2" />
               <p className="text-[#78DAB1] tracking-[5px] font-bold uppercase">
                 SEAMLESS
               </p>
-              <span className="w-10 h-0.5 bg-[#78DAB1] block mr-2"></span>
+              <span className="w-10 h-0.5 bg-[#78DAB1] block mr-2" />
             </div>
-            <h2 className="text-2xl lg:text-2xl lg:text-4xl leading-snug text-white font-bold mb-12 xl:w-4/5 mx-auto">
+            <h2 className="text-2xl  lg:text-4xl leading-snug text-white font-bold mb-12 xl:w-4/5 mx-auto">
               Lhotse integrates into your systems and meets your workflow
               requirements
             </h2>
@@ -251,7 +252,7 @@ export default function product() {
                   >
                     <img
                       src="/assets/systems-integration.svg"
-                      className="block h-20 w-20 transform scale-150"
+                      className="block h-20 w-20 transform scale-100"
                       alt="Systems integration"
                     />
                   </div>
@@ -271,7 +272,7 @@ export default function product() {
                   >
                     <img
                       src="/assets/single-sign.svg"
-                      className="block h-20 w-20 transform scale-150"
+                      className="block h-20 w-20 transform scale-100"
                       alt="Single sign on"
                     />
                   </div>
@@ -291,7 +292,7 @@ export default function product() {
                   >
                     <img
                       src="/assets/workflow-integration.svg"
-                      className="block h-20 w-20 transform scale-150"
+                      className="block h-20 w-20 transform scale-100"
                       alt="Workflow integration"
                     />
                   </div>
@@ -307,17 +308,17 @@ export default function product() {
               </div>
             </div>
             <div className="mt-40">
-              <h2 className="font-bold text-2xl lg:text-2xl lg:text-4xl text-colorOne leading-snug mb-16 text-center xl:w-4/5 mx-auto">
+              <h2 className="font-bold text-2xl  lg:text-4xl text-colorOne leading-snug mb-16 text-center xl:w-4/5 mx-auto">
                 Lhotse works across the procurement maturity spectrum
               </h2>
               <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                 {maturitySpectrum &&
                   maturitySpectrum.map((data) => (
                     <div
-                      className="bg-white rounded-2xl shadow-lg p-6 text-left"
+                      className="bg-white rounded-2xl shadow-lg p-8 text-left"
                       key={data.id}
                     >
-                      <span className="w-36 h-0.5 bg-[#78DAB1] block mb-3"></span>
+                      <span className="w-36 h-0.5 bg-[#78DAB1] block mb-6 mt-2" />
                       <h5 className="font-bold text-colorOne text-2xl mb-6">
                         {data.title}
                       </h5>
@@ -332,7 +333,7 @@ export default function product() {
       <section className="bg-white text-center relative pt-20 pb-8">
         <Container>
           <div className=" relative -mt-72">
-            <h2 className="text-colorOne text-2xl lg:text-2xl lg:text-4xl font-bold mb-20">
+            <h2 className="text-colorOne text-2xl  lg:text-4xl font-bold mb-20">
               Benefits
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4">

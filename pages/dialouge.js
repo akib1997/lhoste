@@ -19,7 +19,8 @@ export default function diolouge() {
       id: 1,
       img: `https://images.unsplash.com/photo-1622568203869-13bc7486becc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80`,
       title: "No dedicated indirect procurement unit / systems in use.",
-      text: "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
+      text:
+        "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
       tags: ["Best Practises", "automation", "technology"],
       author: "Henning Hatje",
       authorImage:
@@ -29,7 +30,8 @@ export default function diolouge() {
       id: 2,
       img: `https://images.unsplash.com/photo-1622570230313-3332b620271c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80`,
       title: "No dedicated indirect procurement unit / systems in use.",
-      text: "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
+      text:
+        "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
       tags: ["Best Practises", "automation", "technology"],
       author: "Jan Berssenbrügge",
       authorImage:
@@ -42,7 +44,8 @@ export default function diolouge() {
       id: 1,
       img: `https://images.unsplash.com/photo-1622570230313-3332b620271c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80`,
       title: "No dedicated indirect procurement unit / systems in use.",
-      text: "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
+      text:
+        "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
       tags: ["Best Practises", "automation", "technology"],
       author: "Henning Hatje",
       authorImage:
@@ -52,7 +55,8 @@ export default function diolouge() {
       id: 2,
       img: ``,
       title: "No dedicated indirect procurement unit / systems in use.",
-      text: "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
+      text:
+        "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
       tags: ["Best Practises", "automation", "technology"],
       author: "Jan Berssenbrügge",
       authorImage:
@@ -62,7 +66,8 @@ export default function diolouge() {
       id: 3,
       img: ``,
       title: "No dedicated indirect procurement unit / systems in use.",
-      text: "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
+      text:
+        "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
       tags: ["Best Practises", "automation", "technology"],
       author: "Henning Hatje",
       authorImage:
@@ -72,7 +77,8 @@ export default function diolouge() {
       id: 4,
       img: `https://images.unsplash.com/photo-1600188769099-d25b4ec79659?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXV0aG9yfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60`,
       title: "No dedicated indirect procurement unit / systems in use.",
-      text: "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
+      text:
+        "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
       tags: ["Best Practises", "automation", "technology"],
       author: "Henning Hatje",
       authorImage:
@@ -82,7 +88,8 @@ export default function diolouge() {
       id: 5,
       img: `https://images.unsplash.com/photo-1622570230313-3332b620271c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80`,
       title: "No dedicated indirect procurement unit / systems in use.",
-      text: "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
+      text:
+        "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
       tags: ["Best Practises", "automation", "technology"],
       author: "Jan Berssenbrügge",
       authorImage:
@@ -92,7 +99,8 @@ export default function diolouge() {
       id: 6,
       img: `https://images.unsplash.com/photo-1600188769099-d25b4ec79659?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXV0aG9yfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60`,
       title: "No dedicated indirect procurement unit / systems in use.",
-      text: "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
+      text:
+        "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
       tags: ["Best Practises", "automation", "technology"],
       author: "Henning Hatje",
       authorImage:
@@ -103,7 +111,8 @@ export default function diolouge() {
       id: 7,
       img: ``,
       title: "No dedicated indirect procurement unit / systems in use.",
-      text: "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
+      text:
+        "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
       tags: ["Best Practises", "automation", "technology"],
       author: "Henning Hatje",
       authorImage:
@@ -113,7 +122,8 @@ export default function diolouge() {
       id: 8,
       img: `https://images.unsplash.com/photo-1600188769099-d25b4ec79659?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXV0aG9yfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60`,
       title: "No dedicated indirect procurement unit / systems in use.",
-      text: "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
+      text:
+        "Lhotse is the first and only Procurement solution you will need. We make sure your Loremipsum dolor sit amet...",
       tags: ["Best Practises", "automation", "technology"],
       author: "Henning Hatje",
       authorImage:
@@ -123,7 +133,7 @@ export default function diolouge() {
   return (
     <>
       <Head>
-        <title>Dillouge | Lhots</title>
+        <title>Dialouge | Lhotse</title>
       </Head>
       <section className="pt-8 relative bg-white">
         <Container>
@@ -164,7 +174,7 @@ export default function diolouge() {
                   placeholder="Search..."
                 />
                 <button className="focus:outline-none">
-                  <FiSearch className="text-2xl text-colorFour mr-4"></FiSearch>
+                  <FiSearch className="text-2xl text-colorFour mr-4" />
                 </button>
               </div>
             </div>
@@ -182,7 +192,7 @@ export default function diolouge() {
       <section className="py-20" style={{ backgroundColor: "#78DAB1" }}>
         <Container>
           <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-6 items-center">
-            <h2 className="font-bold text-3xl xl:text-2xl lg:text-4xl leading-snug md:mb-0 mb-8 text-colorFour xl:col-span-2">
+            <h2 className="font-bold text-2xl xl:text-2xl lg:text-2xl leading-snug md:mb-0 mb-8 text-colorFour xl:col-span-2">
               You want all the insights and expertise directly to your inbox?
               Sign up here for our newsletter
             </h2>
@@ -242,7 +252,9 @@ export default function diolouge() {
 
       <section className="py-20 main-bg pb-80 -mb-72">
         <Container>
-          <h2 className="text-2xl lg:text-4xl font-bold mb-12 black-color">All posts</h2>
+          <h2 className="text-2xl lg:text-4xl font-bold mb-12 black-color">
+            All posts
+          </h2>
           <PostBox posts={allPosts} />
         </Container>
       </section>

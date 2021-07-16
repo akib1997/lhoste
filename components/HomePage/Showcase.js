@@ -14,7 +14,7 @@ export default function Showcase() {
         <Container>
           <div className="lg:flex items-center">
             <div className="lg:w-1/2">
-              <h2 className="text-2xl lg:text-2xl lg:text-4xl black-color font-bold leading-tight mb-8 2xl:w-2/3">
+              <h2 className="text-2xl lg:text-4xl black-color font-bold leading-tight mb-8 ">
                 Manage & automate purchase requisitions
               </h2>
               <div className="flex mb-4">
@@ -37,7 +37,7 @@ export default function Showcase() {
             </div>
             <div className="lg:w-1/2 ml-auto">
               <div className="flex relative">
-                <div className="bg-green-300 bg-opacity-60 w-60 h-60 left-0 right-0 mx-auto top-6 rounded-full absolute z-20"></div>
+                <div className="bg-green-300 bg-opacity-60 w-60 h-60 left-0 right-0 mx-auto top-6 rounded-full absolute z-20" />
                 <img
                   src="/assets/form.svg"
                   className="block mx-auto lg:ml-auto relative z-30 mt-16 w-full max-w-md"
@@ -67,7 +67,7 @@ export default function Showcase() {
               </div>
             </div>
             <div className="lg:w-1/2 lg:order-2 order-1">
-              <h2 className="text-2xl lg:text-2xl lg:text-4xl black-color leading-tight font-bold mb-8">
+              <h2 className="text-2xl  lg:text-4xl black-color leading-tight font-bold mb-8">
                 Identify and assess all relevant suppliers
               </h2>
               <ul>
@@ -107,7 +107,7 @@ export default function Showcase() {
         <Container>
           <div className="lg:flex items-center relative z-20">
             <div className="lg:w-1/2">
-              <h2 className="text-2xl lg:text-2xl lg:text-4xl black-color font-bold leading-tight mb-8 2xl:w-3/4">
+              <h2 className="text-2xl  lg:text-4xl black-color font-bold leading-tight mb-8 2xl:w-3/4">
                 Bring all available data into your processes
               </h2>
               <ul>
