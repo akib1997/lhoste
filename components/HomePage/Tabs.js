@@ -18,7 +18,7 @@ export default function AllTab() {
   const tabData = [
     {
       id: 1,
-      img: "tab1.svg",
+      img: "test.png",
       title: "Requests are handled front-to- end without manual steps",
       text: "Execute purchasing requests front-to-end, based on the proprietary Lhotse multi-algorithm request assessment and automation engine. You are getting the best available sourcing options.",
     },
@@ -44,32 +44,32 @@ export default function AllTab() {
   ];
   return (
     <>
-      <div className="shadow-xl rounded-2xl py-12 md:py-20 bg-white relative z-50 top-32">
+      <div className="shadow-xl rounded-2xl py-12 md:py-20 bg-white relative z-40 top-32">
         <Tabs>
           {tabData.map((data) => (
             <TabPanel key={data.id}>
-              <div className="lg:flex text-center lg:text-left lg:p-0 p-4">
-                <div className="lg:w-1/2">
+              <div className="grid lg:grid-cols-2 text-center lg:text-left lg:p-0 p-4">
+                <div>
                   <img
                     src={`/assets/${data.img}`}
-                    className="h-64 mx-auto"
-                    alt="Requests are handled front-to- end without manual steps"
+                    className="h-72 w-full mx-auto object-contain"
+                    alt={data.title}
                   />
                 </div>
-                <div className="lg:w-1/2 lg:pr-12">
-                  <h3 className="text-3xl font-bold mb-4">{data.title}</h3>
-                  <p>{data.text}</p>
+                <div className="lg:pr-12">
+                  <h3 className="text-2xl lg:text-3xl text-black font-bold mb-4">{data.title}</h3>
+                  <p className="text-base lg:text-lg text-colorTwo">{data.text}</p>
                 </div>
               </div>
             </TabPanel>
           ))}
           <TabList>
             <div className="text-center">
-              <div className="inline-flex flex-wrap pt-3 mt-5 lg:rounded-full shadow-lg justify-center main-bg">
+              <div className="inline-flex flex-wrap pt-3 mt-5 lg:rounded-full big-shadow justify-center bg-colorFive">
                 {buttons &&
                   buttons.map((item) => (
                     <Tab key={item.id}>
-                      <button className="focus:outline-none rounded-full px-4 py-2 mx-2 mb-3 bg-opacity-50 font-semibold">
+                      <button className="focus:outline-none rounded-full px-6 py-2 mx-2 mb-3 bg-opacity-50 !font-bold text-sm">
                         {item.text}
                       </button>
                     </Tab>

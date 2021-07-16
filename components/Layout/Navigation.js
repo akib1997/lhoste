@@ -2,6 +2,10 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Container from "./Container";
+import { BiMenuAltRight } from "react-icons/bi";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { GrClose } from 'react-icons/gr'
+
 
 export default function Header() {
   const router = useRouter();
@@ -9,85 +13,68 @@ export default function Header() {
   const [menu, setMenu] = useState(false);
   const handleMenu = () => {
     setMenu(!menu);
+    if (window.onload) {
+      menu(false)
+    }
   };
 
   return (
-    <header className="bg-white">
-      <nav className="shadow py-3 sm:py-6">
+    <header className="bg-white sticky top-0 left-0 w-full z-50">
+      <nav className="shadow py-3 sm:py-5">
         <Container>
           <div className="relative lg:flex items-center justify-between">
             <div className="flex items-center">
               <div className="flex">
-                <img
-                  src={`/assets/logo.svg`}
-                  alt="logo"
-                  className="h-12 sm:w-32 w-24 self-end"
-                />
-                <div
-                  className="self-start text-xs sm:text-sm sm:px-2 px-1 ml-3 sm:py-1 font-bold text-indigo-800 rounded-md rounded-bl-none"
-                  style={{ backgroundColor: "rgba(36, 13, 133, 0.15)" }}
+                <a
+                  href="https://lhotse.jobs.personio.de/"
+                  target="_blank"
+                  className="block"
+                >
+                  <img
+                    src={`/assets/logo.svg`}
+                    alt="logo"
+                    className="h-8 sm:w-32 w-24 self-end"
+                  />
+                </a>
+                <span
+                  className="self-start sm:px-2 px-1 ml-2 sm:py-1 font-bold text-colorThree rounded-md rounded-bl-none -mt-2"
+                  style={{
+                    backgroundColor: "rgba(36, 13, 133, 0.15)",
+                    fontSize: "10px",
+                  }}
                 >
                   We're hiring
-                </div>
+                </span>
               </div>
               <div className="ml-auto flex items-center lg:hidden">
                 <button
                   type="button"
-                  className="focus:outline-none inline-flex items-center justify-center rounded-md text-gray-400"
+                  className="focus:outline-none inline-flex items-center justify-center rounded-md text-colorTwo w-8 h-8"
                   onClick={handleMenu}
                 >
-                  <svg
-                    className="block h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  </svg>
+                  {menu ? <span className="text-colorOne block"><GrClose className="w-5 h-5" /></span> : <span className="w-full h-full text-colorOne block"><HiOutlineMenuAlt3 className="w-full h-full" /></span>}
 
-                  <svg
-                    className="hidden h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
+
+
                 </button>
               </div>
             </div>
 
             <div
-              className={`${
-                menu
-                  ? "left-0 opacity-100 translate-x-0"
-                  : "-left-full bg-opacity-100 -translate-x-4 lg:-translate-x-0"
-              } ml-auto lg:static absolute top-20 z-50 lg:w-auto w-full bg-gray-300 lg:bg-transparent p-4 lg:p-0 opacity-0 lg:opacity-100 transform`}
+              className={`${menu
+                ? "left-0 opacity-100 translate-x-0"
+                : "-left-full bg-opacity-100 -translate-x-4 lg:-translate-x-0"
+                } ml-auto lg:static absolute top-12 z-50 lg:w-auto w-full bg-white lg:bg-transparent p-4 lg:p-0 opacity-0 lg:opacity-100 transform`}
             >
-              <ul className="lg:flex items-center">
+              <ul className="lg:flex items-center lg:text-left text-center lg:pt-0 pt-8">
                 <li className="lg:pb-0 pb-3">
                   <Link href="/">
                     <a
                       className={`
-                        ${
-                          router.pathname == "/"
-                            ? "font-bold text-gray-700"
-                            : ""
-                        } px-3 py-2 md:ml-2 xl:ml-4 font-normal hover:text-gray-700 transition-all block`}
+                        ${router.pathname == "/"
+                          ? "font-bold text-colorSeven"
+                          : "font-normal"
+                        } px-2 xl:px-3 py-1 xl:py-2 md:ml-2 xl:ml-4 text-colorSeven transition-all block`}
                     >
                       Home
                     </a>
@@ -95,8 +82,14 @@ export default function Header() {
                 </li>
 
                 <li className="lg:pb-0 pb-3">
-                  <Link href="/">
-                    <a className="px-3 py-2 md:ml-2 xl:ml-4 font-normal hover:text-gray-700 transition-all block">
+                  <Link href="/product">
+                    <a
+                      className={`
+                        ${router.pathname === "/product"
+                          ? "font-bold text-colorSeven"
+                          : "font-normal"
+                        } px-2 xl:px-3 py-1 xl:py-2 md:ml-2 xl:ml-4 text-colorSix transition-all block`}
+                    >
                       Product
                     </a>
                   </Link>
@@ -105,11 +98,10 @@ export default function Header() {
                   <Link href="/diolouge">
                     <a
                       className={`
-                        ${
-                          router.pathname == "/diolouge"
-                            ? "font-bold text-gray-700"
-                            : ""
-                        } px-3 py-2 md:ml-2 xl:ml-4 font-normal hover:text-gray-700 transition-all block`}
+                        ${router.pathname == "/diolouge"
+                          ? "font-bold text-colorSeven"
+                          : "font-normal"
+                        } px-2 xl:px-3 py-1 xl:py-2 md:ml-2 xl:ml-4 text-colorSix transition-all block`}
                     >
                       Diolouge
                     </a>
@@ -119,11 +111,10 @@ export default function Header() {
                   <Link href="/about">
                     <a
                       className={`
-                        ${
-                          router.pathname == "/about"
-                            ? "font-bold text-gray-700"
-                            : ""
-                        } px-3 py-2 md:ml-2 xl:ml-4 font-normal hover:text-gray-700 transition-all block`}
+                        ${router.pathname == "/about"
+                          ? "font-bold text-colorSeven"
+                          : "font-normal"
+                        } px-2 xl:px-3 py-1 xl:py-2 md:ml-2 xl:ml-4 text-colorSix transition-all block`}
                     >
                       About
                     </a>
@@ -131,17 +122,17 @@ export default function Header() {
                 </li>
                 <li className="lg:pb-0 pb-3">
                   <Link href="/">
-                    <a
-                      className="px-3 rounded py-2 md:ml-2 xl:ml-4 font-normal transition-all inline-block md:block"
-                      style={{ backgroundColor: "#F4F4FF" }}
-                    >
-                      <img src="./assets/us.png" alt="us" />
+                    <a className="px-2 xl:px-3 xl:rounded-md py-2 md:ml-2 xl:ml-4 font-normal transition-all inline-block md:block bg-colorFive">
+                      <img src="./assets/us.png" alt="us" className="mx-auto" />
                     </a>
                   </Link>
                 </li>
                 <li className="lg:pb-0 pb-3">
                   <Link href="/">
-                    <a className="px-3 py-2 md:ml-4 font-bold text-indigo-800 bg-gray-500 bg-opacity-40 transition-all rounded capitalize">
+                    <a
+                      className="px-2 xl:px-3 py-1 xl:py-2 md:ml-4 font-bold text-colorThree transition-all rounded capitalize text-sm"
+                      style={{ backgroundColor: "rgba(36, 13, 133, 0.15)" }}
+                    >
                       Book demo
                     </a>
                   </Link>

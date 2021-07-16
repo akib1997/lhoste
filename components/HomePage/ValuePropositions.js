@@ -30,12 +30,9 @@ export default function ValuePropositions() {
   ];
   return (
     <>
-      <div
-        className="lg:pb-32 pb-16 relative z-10 pt-80 xl:pt-96 -mt-32"
-        style={{ backgroundColor: "#F4F4FF" }}
-      >
+      <div className="lg:pb-32 pb-16 relative bg-colorFive z-10 pt-80 xl:pt-96 -mt-32">
         <Container>
-          <h2 className="text-4xl font-bold text-center black-color mb-8">
+          <h2 className="text-2xl lg:text-4xl font-bold text-center black-color mb-8">
             Value Proposition
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 my-8 lg:my-20">
@@ -43,7 +40,7 @@ export default function ValuePropositions() {
               items.map((item) => (
                 <div className="text-center" key={item.id}>
                   <div
-                    className="w-40 h-40 mx-auto flex items-center justify-center rounded-full shadow-xl"
+                    className="w-40 h-40 mx-auto flex items-center justify-center rounded-full extra-shadow"
                     style={{ backgroundColor: "rgba(36, 13, 133, 0.15)" }}
                   >
                     <img
@@ -57,7 +54,7 @@ export default function ValuePropositions() {
                       {" "}
                       {item.head}{" "}
                     </h6>
-                    <p className="text-gray-400"> {item.text} </p>
+                    <p className="text-colorTwoy-400"> {item.text} </p>
                   </div>
                 </div>
               ))}

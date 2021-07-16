@@ -17,9 +17,9 @@ export default function TeamMember({ teamData }) {
               />
             </div>
 
-            <div className="p-12 mt-20">
+            <div className="p-6 xl:p-12 mt-20">
               <span className="w-20 h-0.5 bg-green-500 block mx-auto my-2"></span>
-              <h5 className="text-xl font-bold text-blue-900 mb-2">
+              <h5 className="text-base md:text-xl font-bold text-blue-900 mb-2">
                 {" "}
                 {member.title}{" "}
               </h5>
