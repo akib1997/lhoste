@@ -1,13 +1,22 @@
+import Header from "../components/Layout/Navigation";
+import Footer from "../components/Layout/Footer";
 import "../styles/globals.css";
-import Menu from "../components/Layout/Menu";
-import Footer from "../components/Common/Footer/Footer";
+import { useEffect, useState } from "react";
 
 function MyApp({ Component, pageProps, navItems }) {
+  const [mount, setMount] = useState(false);
+  useEffect(() => {
+    setMount(true);
+  }, []);
   return (
     <>
-      {/* <Menu navItems={navItems} /> */}
-      <Component {...pageProps} />
-      {/* <Footer /> */}
+      {mount && (
+        <>
+          <Header />
+          <Component {...pageProps} />
+          <Footer />
+        </>
+      )}
     </>
   );
 }

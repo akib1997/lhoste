@@ -1,13 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
-@import url("./AppOverview.css");
-@import url("./ValueProposition.css");
+@tailwind variants;
 
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  color: #696987;
+}
+.main-bg {
+  background-color: #f4f4ff;
+}
+.main-color {
+  color: #f4f4ff;
+}
+.black-color {
+  color: #00064a;
+}
+.btn-bg {
+  background-color: #240d85;
+}
+.color-blue {
+  color: #240d85;
+}
+.tag-bg {
+  background-color: rgba(36, 13, 133, 0.15);
+}
+.react-tabs__tab-panel {
+  transition: all 0.7s;
+  position: relative;
+  left: -2rem;
+  opacity: 0;
+}
+.react-tabs__tab-panel--selected {
+  left: 0;
+  opacity: 1;
+}
+
+.react-tabs__tab--selected button {
+  background-color: rgba(36, 13, 133, 0.15);
+  color: #240d85;
+  font-weight: 700;
+}
+
+input:checked + div {
+  @apply border-white;
+}
+input:checked + div svg {
+  @apply block;
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -1.5rem; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 1.5rem; /* gutter size */
+  background-clip: padding-box;
+}
+
+.traingle-height {
+  height: 120%;
+}
+
+.big-shadow {
+  -webkit-box-shadow: 0px 20px 40px 0px rgba(36, 14, 133, 0.1);
+  -moz-box-shadow: 0px 20px 40px 0px rgba(36, 14, 133, 0.1);
+  box-shadow: 0px 20px 40px 0px rgba(36, 14, 133, 0.1);
+}
+.extra-shadow {
+  -webkit-box-shadow: 0px 40px 100px 0px rgba(12, 8, 63, 0.15);
+  -moz-box-shadow: 0px 40px 100px 0px rgba(12, 8, 63, 0.15);
+  box-shadow: 0px 40px 100px 0px rgba(12, 8, 63, 0.15);
+}
+
+@media screen and (max-width: 1024px) {
+  .traingle-height {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 550px) {
+  .traingle-height {
+    height: 300px;
+  }
 }
